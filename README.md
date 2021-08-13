@@ -1,6 +1,3 @@
-This repository contains design details of JSMU - source measure unit.
-
-
 ## What is SMU?
 In case you don't know what is SMU, take a look [here](https://en.wikipedia.org/wiki/Source_measure_unit)
 Basically, it's glorified power supply, able to both source voltage (and measure current) or source current (and measure voltage), usually in wide range of voltages and currents. It usually works in four quadrants, meaning it's able to both sink and source power. When set to zero output voltage, SMU acts as ammeter and when set to zero current, acts as voltmeter.
