@@ -9,6 +9,7 @@ Basically, it's glorified power supply, able to both source voltage (and measure
 - BOM - Bill Of Material. Contains list of components and materials used in this device. Separated by PCBs.
 - firmware - firmware for two microcontrollers running in JSMU
 - mechanical - mechanical parts I designed for this SMU
+- media - minimal amount of pictures
 - pcb
 -- pcb_gerber - gerber data in zip files, ready to be manufactured
 -- pcb_ibom - interactive BOM files, helping when populating the boards, also helpful to get familiar with the project
@@ -18,7 +19,7 @@ Basically, it's glorified power supply, able to both source voltage (and measure
 ## What is JSMU?
 JSMU is open source implementation of SMU, inspired by Keithley 236 and Dave Erickson's [DIY SMU](http://www.djerickson.com/diy_smu/index.html)
 
-![](https://i.imgur.com/ybCWOmw.jpeg)
+![](https://github.com/jaromir-sukuba/J-SMU/blob/master/media/IMG_9784.JPG)
 
 Parameters:
 - Voltage ranges 12 and 120V
@@ -30,6 +31,7 @@ Parameters:
 
 JSMU is designed to work as standalone device, but can be connected to computer via USB, and controlled via simple commands in ASCII text form. SCPI commands are not yet implemented, but I'm strongly considering it.
 
+More pictures can be found in [imgur gallery](https://imgur.com/a/rR8cIFG)
 
 ## FAQ
 Q: I noticed you used AT90S4434, made in 1998 as controller for your analog board.
