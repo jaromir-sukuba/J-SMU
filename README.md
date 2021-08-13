@@ -19,8 +19,8 @@ JSMU is open source implementation of SMU, inspired by Keithley 236 and Dave Eri
 ![](https://github.com/jaromir-sukuba/J-SMU/blob/master/media/IMG_9784.JPG)
 
 Parameters:
-- Voltage ranges 12 and 120V
-- Current ranges 1uA, 10uA, 100uA, 1mA, 10mA, 100mA
+- Voltage ranges 12V and 120V (bipolar)
+- Current ranges 1uA, 10uA, 100uA, 1mA, 10mA, 100mA (bipolar)
 - Minimal set voltage step - 1mV
 - Minimal set current step - 100pA
 - Voltage resolution - 100uV
