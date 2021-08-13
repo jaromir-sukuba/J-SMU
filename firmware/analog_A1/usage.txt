@@ -1,0 +1,8 @@
+Complie source into elf file running
+	avr-gcc -mmcu=at90s4434 -Wall -Os -o main.elf main.c
+
+Convert elf file into hex file by running
+	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+
+Burn the hex file into your target by running
+	avrdude -P /dev/ttyUSB0 -c stk500 -p 4434 -e -U flash:w:main.hex

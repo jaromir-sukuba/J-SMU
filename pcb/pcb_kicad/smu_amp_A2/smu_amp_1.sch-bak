@@ -1,0 +1,1318 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R11
+U 1 1 5FFD8C3A
+P 1375 4125
+F 0 "R11" V 1168 4125 50  0000 C CNN
+F 1 "1k" V 1259 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1305 4125 50  0001 C CNN
+F 3 "~" H 1375 4125 50  0001 C CNN
+	1    1375 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+15V #PWR011
+U 1 1 5FFD9427
+P 2000 5075
+F 0 "#PWR011" H 2000 4925 50  0001 C CNN
+F 1 "+15V" H 2015 5248 50  0000 C CNN
+F 2 "" H 2000 5075 50  0001 C CNN
+F 3 "" H 2000 5075 50  0001 C CNN
+	1    2000 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR010
+U 1 1 5FFD9A5D
+P 2000 3225
+F 0 "#PWR010" H 2000 3325 50  0001 C CNN
+F 1 "-15V" H 2015 3398 50  0000 C CNN
+F 2 "" H 2000 3225 50  0001 C CNN
+F 3 "" H 2000 3225 50  0001 C CNN
+	1    2000 3225
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5FFDC08B
+P 2275 4125
+F 0 "R14" V 2068 4125 50  0000 C CNN
+F 1 "220R" V 2159 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2205 4125 50  0001 C CNN
+F 3 "~" H 2275 4125 50  0001 C CNN
+	1    2275 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5FFDE344
+P 3600 3575
+F 0 "R27" H 3530 3529 50  0000 R CNN
+F 1 "220R" H 3530 3620 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3530 3575 50  0001 C CNN
+F 3 "~" H 3600 3575 50  0001 C CNN
+	1    3600 3575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 5FFE2228
+P 3750 3425
+F 0 "R29" V 3875 3225 50  0000 C CNN
+F 1 "1k" V 3800 3250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3680 3425 50  0001 C CNN
+F 3 "~" H 3750 3425 50  0001 C CNN
+	1    3750 3425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 5FFE3184
+P 4125 3575
+F 0 "R33" H 4200 3725 50  0000 L CNN
+F 1 "22R" H 4200 3625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 4055 3575 50  0001 C CNN
+F 3 "~" H 4125 3575 50  0001 C CNN
+	1    4125 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP42 Q16
+U 1 1 5FFE9270
+P 4025 5625
+F 0 "Q16" H 4216 5671 50  0000 L CNN
+F 1 "TIP42" H 4216 5580 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4275 5550 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" H 4025 5625 50  0001 L CNN
+	1    4025 5625
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4125 5425 4125 4825
+$Comp
+L Device:R R19
+U 1 1 5FFF3F61
+P 2800 2500
+F 0 "R19" H 3025 2450 50  0000 R CNN
+F 1 "1M" H 3000 2550 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 2500 50  0001 C CNN
+F 3 "~" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FFF4F0D
+P 3075 2500
+F 0 "C3" H 2900 2675 50  0000 L CNN
+F 1 "2n2" H 2900 2575 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 2350 50  0001 C CNN
+F 3 "~" H 3075 2500 50  0001 C CNN
+	1    3075 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2225 2800 2350
+Wire Wire Line
+	3075 2350 3075 2225
+Wire Wire Line
+	3075 2225 2800 2225
+Wire Wire Line
+	3075 2650 2800 2650
+Connection ~ 2800 2650
+$Comp
+L Transistor_BJT:BC817 Q7
+U 1 1 5FFF92B9
+P 3250 3200
+F 0 "Q7" H 3441 3246 50  0000 L CNN
+F 1 "BC817" H 3441 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 3250 3200 50  0001 L CNN
+	1    3250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC807 Q8
+U 1 1 5FFF9DF6
+P 3250 5125
+F 0 "Q8" H 3441 5171 50  0000 L CNN
+F 1 "BC807" H 3441 5080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 5050 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC808-D.pdf" H 3250 5125 50  0001 L CNN
+	1    3250 5125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q12
+U 1 1 5FFEB7F3
+P 4025 2225
+F 0 "Q12" H 4229 2271 50  0000 L CNN
+F 1 "IRF620" H 4229 2180 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4275 2150 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4025 2225 50  0001 L CNN
+	1    4025 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2700 2000 2825
+$Comp
+L Device:R R12
+U 1 1 600005CB
+P 2000 2550
+F 0 "R12" H 2070 2596 50  0000 L CNN
+F 1 "2k2" H 2070 2505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 1930 2550 50  0001 C CNN
+F 3 "~" H 2000 2550 50  0001 C CNN
+	1    2000 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 2700
+$Comp
+L Device:R R13
+U 1 1 60000D39
+P 2000 5775
+F 0 "R13" H 2070 5821 50  0000 L CNN
+F 1 "2k2" H 2070 5730 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 1930 5775 50  0001 C CNN
+F 3 "~" H 2000 5775 50  0001 C CNN
+	1    2000 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5625 2000 5475
+Connection ~ 2000 5625
+$Comp
+L power:-15V #PWR012
+U 1 1 60001DBF
+P 2000 5925
+F 0 "#PWR012" H 2000 6025 50  0001 C CNN
+F 1 "-15V" H 2015 6098 50  0000 C CNN
+F 2 "" H 2000 5925 50  0001 C CNN
+F 3 "" H 2000 5925 50  0001 C CNN
+	1    2000 5925
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR09
+U 1 1 600021CB
+P 2000 2400
+F 0 "#PWR09" H 2000 2250 50  0001 C CNN
+F 1 "+15V" H 2015 2573 50  0000 C CNN
+F 2 "" H 2000 2400 50  0001 C CNN
+F 3 "" H 2000 2400 50  0001 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4125 2425
+$Comp
+L Diode:BAV99 D4
+U 1 1 5FFFB358
+P 3825 2425
+F 0 "D4" H 3950 2525 50  0000 C CNN
+F 1 "BAV199" H 3975 2600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 1925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3825 2425 50  0001 C CNN
+	1    3825 2425
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 6000646C
+P 3325 2225
+F 0 "R24" V 3532 2225 50  0000 C CNN
+F 1 "47R" V 3441 2225 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3255 2225 50  0001 C CNN
+F 3 "~" H 3325 2225 50  0001 C CNN
+	1    3325 2225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3475 2225 3825 2225
+Connection ~ 3825 2225
+Wire Wire Line
+	3175 2225 3075 2225
+Connection ~ 3075 2225
+$Comp
+L Device:R R18
+U 1 1 600090FA
+P 2800 1850
+F 0 "R18" H 3025 1800 50  0000 R CNN
+F 1 "2M2" H 3025 1900 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 1850 50  0001 C CNN
+F 3 "~" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60009100
+P 3075 1850
+F 0 "C2" H 2925 1750 50  0000 L CNN
+F 1 "1n" H 2925 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 1700 50  0001 C CNN
+F 3 "~" H 3075 1850 50  0001 C CNN
+	1    3075 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1575 2800 1700
+Wire Wire Line
+	3075 1700 3075 1575
+Wire Wire Line
+	3075 1575 2800 1575
+$Comp
+L Transistor_FET:IRF540N Q11
+U 1 1 6000910A
+P 4025 1575
+F 0 "Q11" H 4229 1621 50  0000 L CNN
+F 1 "IRF620" H 4229 1530 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4275 1500 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4025 1575 50  0001 L CNN
+	1    4025 1575
+	1    0    0    -1  
+$EndComp
+Connection ~ 4125 1775
+$Comp
+L Diode:BAV99 D3
+U 1 1 60009111
+P 3825 1775
+F 0 "D3" H 3825 1898 50  0000 C CNN
+F 1 "BAV199" H 3825 1989 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 1275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3825 1775 50  0001 C CNN
+	1    3825 1775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 60009117
+P 3325 1575
+F 0 "R23" V 3532 1575 50  0000 C CNN
+F 1 "47R" V 3441 1575 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3255 1575 50  0001 C CNN
+F 3 "~" H 3325 1575 50  0001 C CNN
+	1    3325 1575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3475 1575 3825 1575
+Connection ~ 3825 1575
+Wire Wire Line
+	3175 1575 3075 1575
+Connection ~ 3075 1575
+Wire Wire Line
+	2800 2000 2800 2225
+Connection ~ 2800 2225
+Wire Wire Line
+	3075 2000 3075 2225
+Wire Wire Line
+	4125 1775 4125 2025
+$Comp
+L Device:R R17
+U 1 1 6000E370
+P 2800 1200
+F 0 "R17" H 3025 1150 50  0000 R CNN
+F 1 "2M2" H 3000 1250 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 1200 50  0001 C CNN
+F 3 "~" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6000E376
+P 3075 1200
+F 0 "C1" H 3200 1250 50  0000 L CNN
+F 1 "1n" H 3190 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 1050 50  0001 C CNN
+F 3 "~" H 3075 1200 50  0001 C CNN
+	1    3075 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 1350 3075 1575
+Wire Wire Line
+	2800 1350 2800 1575
+Connection ~ 2800 1575
+Wire Wire Line
+	3075 1050 4125 1050
+Wire Wire Line
+	4125 1050 4125 1375
+Wire Wire Line
+	3075 1050 2800 1050
+Connection ~ 3075 1050
+$Comp
+L Diode:BAV99 D1
+U 1 1 60010ED0
+P 3150 2800
+F 0 "D1" H 2975 2700 50  0000 C CNN
+F 1 "BAV99" H 2950 2600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3150 2300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3150 2800 50  0001 C CNN
+	1    3150 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 60012628
+P 4125 4675
+F 0 "R34" H 4195 4721 50  0000 L CNN
+F 1 "22R" H 4195 4630 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 4055 4675 50  0001 C CNN
+F 3 "~" H 4125 4675 50  0001 C CNN
+	1    4125 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 60012908
+P 3600 4675
+F 0 "R28" H 3850 4650 50  0000 R CNN
+F 1 "220R" H 3900 4725 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3530 4675 50  0001 C CNN
+F 3 "~" H 3600 4675 50  0001 C CNN
+	1    3600 4675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 60012BAE
+P 3750 4825
+F 0 "R30" V 3650 4675 50  0000 C CNN
+F 1 "1k" V 3575 4675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3680 4825 50  0001 C CNN
+F 3 "~" H 3750 4825 50  0001 C CNN
+	1    3750 4825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 6001897F
+P 2800 5850
+F 0 "R20" H 3000 5800 50  0000 R CNN
+F 1 "1M" H 2975 5725 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 5850 50  0001 C CNN
+F 3 "~" H 2800 5850 50  0001 C CNN
+	1    2800 5850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6125 2800 6000
+Wire Wire Line
+	3075 6000 3075 6125
+Wire Wire Line
+	3075 6125 2800 6125
+$Comp
+L Device:R R25
+U 1 1 6001899C
+P 3325 6125
+F 0 "R25" V 3425 6075 50  0000 C CNN
+F 1 "47R" V 3525 6075 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3255 6125 50  0001 C CNN
+F 3 "~" H 3325 6125 50  0001 C CNN
+	1    3325 6125
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3475 6125 3825 6125
+Wire Wire Line
+	3175 6125 3075 6125
+Connection ~ 3075 6125
+$Comp
+L Device:R R21
+U 1 1 600189A6
+P 2800 6500
+F 0 "R21" H 3025 6450 50  0000 R CNN
+F 1 "2M2" H 3025 6375 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 6500 50  0001 C CNN
+F 3 "~" H 2800 6500 50  0001 C CNN
+	1    2800 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 600189AC
+P 3075 6500
+F 0 "C5" H 2925 6300 50  0000 L CNN
+F 1 "1n" H 2925 6375 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 6350 50  0001 C CNN
+F 3 "~" H 3075 6500 50  0001 C CNN
+	1    3075 6500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2800 6775 2800 6650
+Wire Wire Line
+	3075 6650 3075 6775
+Wire Wire Line
+	3075 6775 2800 6775
+$Comp
+L Diode:BAV99 D6
+U 1 1 600189BC
+P 3825 6575
+F 0 "D6" H 3825 6791 50  0000 C CNN
+F 1 "BAV199" H 3825 6700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 6075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3825 6575 50  0001 C CNN
+	1    3825 6575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 600189C2
+P 3325 6775
+F 0 "R26" V 3425 6650 50  0000 C CNN
+F 1 "47R" V 3500 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3255 6775 50  0001 C CNN
+F 3 "~" H 3325 6775 50  0001 C CNN
+	1    3325 6775
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3475 6775 3825 6775
+Wire Wire Line
+	3175 6775 3075 6775
+Connection ~ 3075 6775
+Wire Wire Line
+	2800 6350 2800 6125
+Connection ~ 2800 6125
+Wire Wire Line
+	3075 6350 3075 6125
+Wire Wire Line
+	4125 6575 4125 6325
+$Comp
+L Device:R R22
+U 1 1 600189D0
+P 2800 7150
+F 0 "R22" H 3025 7200 50  0000 R CNN
+F 1 "2M2" H 3025 7125 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2730 7150 50  0001 C CNN
+F 3 "~" H 2800 7150 50  0001 C CNN
+	1    2800 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 600189D6
+P 3075 7150
+F 0 "C6" H 3225 7100 50  0000 L CNN
+F 1 "1n" H 3250 7175 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 7000 50  0001 C CNN
+F 3 "~" H 3075 7150 50  0001 C CNN
+	1    3075 7150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3075 7000 3075 6775
+Wire Wire Line
+	2800 7000 2800 6775
+Connection ~ 2800 6775
+Wire Wire Line
+	3075 7300 4125 7300
+Wire Wire Line
+	4125 7300 4125 6975
+Wire Wire Line
+	3075 7300 2800 7300
+Connection ~ 3075 7300
+$Comp
+L Transistor_FET:IRF9540N Q14
+U 1 1 60020D32
+P 4025 6775
+F 0 "Q14" H 4229 6729 50  0000 L CNN
+F 1 "IRF9620" H 4229 6820 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4225 6700 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 4025 6775 50  0001 L CNN
+	1    4025 6775
+	1    0    0    1   
+$EndComp
+Connection ~ 3825 6775
+Connection ~ 4125 6575
+Wire Wire Line
+	3075 5700 2800 5700
+Connection ~ 2800 5700
+$Comp
+L Diode:BAV99 D2
+U 1 1 6002A895
+P 3150 5525
+F 0 "D2" H 3300 5325 50  0000 C CNN
+F 1 "BAV99" H 3325 5425 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3150 5025 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3150 5525 50  0001 C CNN
+	1    3150 5525
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1225 4125 1075 4125
+Text Label 1075 4125 2    50   ~ 0
+AMP_IN
+Text Label 4950 4125 0    50   ~ 0
+AMP_OUT
+Wire Wire Line
+	4125 7300 4450 7300
+Connection ~ 4125 7300
+Wire Wire Line
+	4125 1050 4250 1050
+Connection ~ 4125 1050
+Text Label 4250 1050 0    50   ~ 0
+160V+
+Text Label 4450 7300 0    50   ~ 0
+160V-
+$Comp
+L Transistor_BJT:BC140 Q6
+U 1 1 6003E05D
+P 1900 5275
+F 0 "Q6" H 2091 5321 50  0000 L CNN
+F 1 "BC140" H 2091 5230 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 2100 5200 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/296634.pdf" H 1900 5275 50  0001 L CNN
+	1    1900 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC160 Q5
+U 1 1 6003EE6E
+P 1900 3025
+F 0 "Q5" H 2091 2979 50  0000 L CNN
+F 1 "BC160" H 2091 3070 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 2100 2950 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1697389.pdf" H 1900 3025 50  0001 L CNN
+	1    1900 3025
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60018985
+P 3075 5850
+F 0 "C4" H 2925 5775 50  0000 L CNN
+F 1 "2n2" H 2900 5700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3113 5700 50  0001 C CNN
+F 3 "~" H 3075 5850 50  0001 C CNN
+	1    3075 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600D22B8
+P 8950 2025
+F 0 "H1" H 9050 2025 50  0000 L CNN
+F 1 "MountingHole" H 9050 1980 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 8950 2025 50  0001 C CNN
+F 3 "~" H 8950 2025 50  0001 C CNN
+	1    8950 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600D2462
+P 8950 2225
+F 0 "H2" H 9050 2225 50  0000 L CNN
+F 1 "MountingHole" H 9050 2180 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 8950 2225 50  0001 C CNN
+F 3 "~" H 8950 2225 50  0001 C CNN
+	1    8950 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600D2642
+P 8950 2425
+F 0 "H3" H 9050 2425 50  0000 L CNN
+F 1 "MountingHole" H 9050 2380 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 8950 2425 50  0001 C CNN
+F 3 "~" H 8950 2425 50  0001 C CNN
+	1    8950 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 600D2851
+P 8950 2600
+F 0 "H4" H 9050 2600 50  0000 L CNN
+F 1 "MountingHole" H 9050 2555 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad" H 8950 2600 50  0001 C CNN
+F 3 "~" H 8950 2600 50  0001 C CNN
+	1    8950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR02
+U 1 1 6006CCF3
+P 5850 1600
+F 0 "#PWR02" H 5850 1450 50  0001 C CNN
+F 1 "+15V" V 5850 1825 50  0000 C CNN
+F 2 "" H 5850 1600 50  0001 C CNN
+F 3 "" H 5850 1600 50  0001 C CNN
+	1    5850 1600
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:-15V #PWR01
+U 1 1 6006D34B
+P 5850 1300
+F 0 "#PWR01" H 5850 1400 50  0001 C CNN
+F 1 "-15V" V 5850 1525 50  0000 C CNN
+F 2 "" H 5850 1300 50  0001 C CNN
+F 3 "" H 5850 1300 50  0001 C CNN
+	1    5850 1300
+	0    1    -1   0   
+$EndComp
+Text Label 5850 1400 0    50   ~ 0
+AMP_OUT
+Text Label 5850 1500 0    50   ~ 0
+AMP_IN
+$Comp
+L Diode:1N4007 D7
+U 1 1 600D4D18
+P 4825 2575
+F 0 "D7" V 4779 2655 50  0000 L CNN
+F 1 "1N4007" V 4870 2655 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4825 2400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4825 2575 50  0001 C CNN
+	1    4825 2575
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D8
+U 1 1 600D5298
+P 4825 5775
+F 0 "D8" V 4779 5855 50  0000 L CNN
+F 1 "1N4007" V 4870 5855 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4825 5600 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4825 5775 50  0001 C CNN
+	1    4825 5775
+	0    1    1    0   
+$EndComp
+Text Label 8650 1525 2    50   ~ 0
+160V-
+Text Label 8650 1225 2    50   ~ 0
+160V+
+$Comp
+L Device:C C7
+U 1 1 600E5A3D
+P 8650 1375
+F 0 "C7" H 8825 1400 50  0000 L CNN
+F 1 "2n2" H 8800 1325 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L19.0mm_D7.5mm_P25.00mm_Horizontal" H 8688 1225 50  0001 C CNN
+F 3 "~" H 8650 1375 50  0001 C CNN
+	1    8650 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 6008348B
+P 9275 1375
+F 0 "J2" H 9247 1353 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9383 1565 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical" H 9275 1375 50  0001 C CNN
+F 3 "~" H 9275 1375 50  0001 C CNN
+	1    9275 1375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1225 9000 1225
+Wire Wire Line
+	9000 1225 9000 1275
+Wire Wire Line
+	9000 1275 9075 1275
+Wire Wire Line
+	8650 1525 9000 1525
+Wire Wire Line
+	9000 1525 9000 1475
+Wire Wire Line
+	9000 1475 9075 1475
+Connection ~ 4125 5925
+Connection ~ 3825 6125
+$Comp
+L Diode:BAV99 D5
+U 1 1 60018996
+P 3825 5925
+F 0 "D5" H 3825 6141 50  0000 C CNN
+F 1 "BAV199" H 3825 6050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3825 5425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 3825 5925 50  0001 C CNN
+	1    3825 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF9540N Q13
+U 1 1 5FFEC7FA
+P 4025 6125
+F 0 "Q13" H 4229 6079 50  0000 L CNN
+F 1 "IRF9620" H 4229 6170 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4225 6050 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9540n.pdf" H 4025 6125 50  0001 L CNN
+	1    4025 6125
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1525 4125 1700 4125
+Wire Wire Line
+	2425 4125 2800 4125
+Wire Wire Line
+	1700 3025 1700 4125
+Connection ~ 1700 4125
+Wire Wire Line
+	1700 4125 2125 4125
+Wire Wire Line
+	1700 4125 1700 5275
+Wire Wire Line
+	2800 4125 2800 5700
+Connection ~ 2800 4125
+Wire Wire Line
+	2800 4125 3150 4125
+Wire Wire Line
+	2800 2650 2800 4125
+Wire Wire Line
+	3150 3400 3150 4125
+Connection ~ 3150 4125
+Wire Wire Line
+	3150 4125 3600 4125
+Wire Wire Line
+	3150 4125 3150 4925
+Wire Wire Line
+	4825 2725 4825 4125
+Connection ~ 4825 4125
+Wire Wire Line
+	4825 4125 4950 4125
+Wire Wire Line
+	4825 4125 4825 5625
+$Comp
+L Transistor_FET:2N7002 Q9
+U 1 1 608E5AB9
+P 3500 3925
+F 0 "Q9" H 3300 4150 50  0000 L CNN
+F 1 "2N7002" H 3200 4050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 3850 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3500 3925 50  0001 L CNN
+	1    3500 3925
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 4125
+$Comp
+L Transistor_FET:2N7002 Q10
+U 1 1 60927FDD
+P 3500 4325
+F 0 "Q10" H 3275 4250 50  0000 L CNN
+F 1 "2N7002" H 3200 4150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 4250 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3500 4325 50  0001 L CNN
+	1    3500 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R31
+U 1 1 609471C3
+P 3775 3975
+F 0 "R31" H 3845 4021 50  0000 L CNN
+F 1 "2k2" H 3845 3930 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3705 3975 50  0001 C CNN
+F 3 "~" H 3775 3975 50  0001 C CNN
+	1    3775 3975
+	1    0    0    -1  
+$EndComp
+Connection ~ 3775 4125
+$Comp
+L Device:R R32
+U 1 1 60948C65
+P 3775 4275
+F 0 "R32" H 3845 4321 50  0000 L CNN
+F 1 "2k2" H 3845 4230 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 3705 4275 50  0001 C CNN
+F 3 "~" H 3775 4275 50  0001 C CNN
+	1    3775 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 6099B3CB
+P 3750 5125
+F 0 "R16" V 3650 5125 50  0000 R CNN
+F 1 "DNP" V 3550 5125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3680 5125 50  0001 C CNN
+F 3 "~" H 3750 5125 50  0001 C CNN
+	1    3750 5125
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+15V #PWR013
+U 1 1 609C1C0B
+P 3900 3200
+F 0 "#PWR013" H 3900 3050 50  0001 C CNN
+F 1 "+15V" H 3915 3373 50  0000 C CNN
+F 2 "" H 3900 3200 50  0001 C CNN
+F 3 "" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR014
+U 1 1 609C6573
+P 3900 5125
+F 0 "#PWR014" H 3900 5225 50  0001 C CNN
+F 1 "-15V" H 3915 5298 50  0000 C CNN
+F 2 "" H 3900 5125 50  0001 C CNN
+F 3 "" H 3900 5125 50  0001 C CNN
+	1    3900 5125
+	1    0    0    1   
+$EndComp
+Connection ~ 3600 4825
+Wire Wire Line
+	3900 4825 4125 4825
+Connection ~ 4125 4825
+Wire Wire Line
+	3900 3425 4125 3425
+Connection ~ 4125 3425
+Wire Wire Line
+	3775 4125 4125 4125
+Wire Wire Line
+	3300 4325 3300 3925
+Wire Wire Line
+	3300 3925 3075 3925
+Connection ~ 3300 3925
+$Comp
+L Transistor_FET:IRF7403 Q18
+U 1 1 609FCEE5
+P 4225 4325
+F 0 "Q18" H 4050 4225 50  0000 L CNN
+F 1 "IRF7403" H 3875 4150 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4425 4225 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c" H 4225 4325 50  0001 L CNN
+	1    4225 4325
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4125 4125
+$Comp
+L Transistor_FET:IRF7403 Q17
+U 1 1 609FB08B
+P 4225 3925
+F 0 "Q17" H 4025 4125 50  0000 L CNN
+F 1 "IRF7403" H 3875 4050 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4425 3825 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf7403pbf.pdf?fileId=5546d462533600a4015355fa23541b9c" H 4225 3925 50  0001 L CNN
+	1    4225 3925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4125 3775 4125
+Wire Wire Line
+	4125 4125 4825 4125
+Wire Wire Line
+	4125 2425 4825 2425
+Wire Wire Line
+	4125 5825 4125 5925
+Wire Wire Line
+	4125 5925 4825 5925
+Wire Wire Line
+	3775 3825 3775 3725
+Wire Wire Line
+	3775 3725 4125 3725
+Connection ~ 4125 3725
+Wire Wire Line
+	3775 4425 3775 4525
+Wire Wire Line
+	3775 4525 4125 4525
+Connection ~ 4125 4525
+Wire Wire Line
+	4425 3925 4500 3925
+Wire Wire Line
+	4500 3925 4500 4325
+Wire Wire Line
+	4500 4325 4425 4325
+Wire Wire Line
+	4500 3925 4575 3925
+Connection ~ 4500 3925
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 60A7AB30
+P 5650 1500
+F 0 "J1" H 5750 1850 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 6125 900 50  0001 R CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0006_1x06_P3.96mm_Vertical" H 5650 1500 50  0001 C CNN
+F 3 "~" H 5650 1500 50  0001 C CNN
+	1    5650 1500
+	1    0    0    -1  
+$EndComp
+Text Label 3075 3925 2    50   ~ 0
+CL_A
+Text Label 4575 3925 0    50   ~ 0
+CL_B
+$Comp
+L Device:R R2
+U 1 1 60AE009D
+P 6600 1875
+F 0 "R2" V 6725 1925 50  0000 C CNN
+F 1 "1k" V 6725 1775 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6530 1875 50  0001 C CNN
+F 3 "~" H 6600 1875 50  0001 C CNN
+	1    6600 1875
+	0    -1   -1   0   
+$EndComp
+Text Label 7050 2200 0    50   ~ 0
+AMP_OUT
+Wire Wire Line
+	7050 2200 7050 2075
+$Comp
+L Device:R R6
+U 1 1 60AEAE3B
+P 7050 1425
+F 0 "R6" H 7175 1550 50  0000 C CNN
+F 1 "47k" H 7200 1475 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6980 1425 50  0001 C CNN
+F 3 "~" H 7050 1425 50  0001 C CNN
+	1    7050 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR04
+U 1 1 60AEC7F7
+P 7050 1275
+F 0 "#PWR04" H 7050 1125 50  0001 C CNN
+F 1 "+15V" H 7065 1448 50  0000 C CNN
+F 2 "" H 7050 1275 50  0001 C CNN
+F 3 "" H 7050 1275 50  0001 C CNN
+	1    7050 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC807 Q4
+U 1 1 60AF5BCE
+P 7550 1575
+F 0 "Q4" H 7741 1529 50  0000 L CNN
+F 1 "BC807" H 7741 1620 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7750 1500 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC808-D.pdf" H 7550 1575 50  0001 L CNN
+	1    7550 1575
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR07
+U 1 1 60AF68E2
+P 7650 1275
+F 0 "#PWR07" H 7650 1125 50  0001 C CNN
+F 1 "+15V" H 7665 1448 50  0000 C CNN
+F 2 "" H 7650 1275 50  0001 C CNN
+F 3 "" H 7650 1275 50  0001 C CNN
+	1    7650 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1275 7650 1375
+$Comp
+L Device:R R10
+U 1 1 60AFAAC8
+P 7650 1950
+F 0 "R10" H 7800 1975 50  0000 C CNN
+F 1 "22k" H 7800 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 7580 1950 50  0001 C CNN
+F 3 "~" H 7650 1950 50  0001 C CNN
+	1    7650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR08
+U 1 1 60AFBBA4
+P 7650 2100
+F 0 "#PWR08" H 7650 2200 50  0001 C CNN
+F 1 "-15V" H 7665 2273 50  0000 C CNN
+F 2 "" H 7650 2100 50  0001 C CNN
+F 3 "" H 7650 2100 50  0001 C CNN
+	1    7650 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 1800 7650 1775
+$Comp
+L Device:R R8
+U 1 1 60B04018
+P 7200 1575
+F 0 "R8" V 7300 1650 50  0000 C CNN
+F 1 "47k" V 7375 1675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 7130 1575 50  0001 C CNN
+F 3 "~" H 7200 1575 50  0001 C CNN
+	1    7200 1575
+	0    1    1    0   
+$EndComp
+Connection ~ 7050 1575
+Wire Wire Line
+	7050 1575 7050 1675
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 60B155F6
+P 6950 1875
+F 0 "Q2" H 7175 1850 50  0000 L CNN
+F 1 "2N7002" H 7125 1750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7150 1800 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6950 1875 50  0001 L CNN
+	1    6950 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60B1F066
+P 6750 2025
+F 0 "R4" H 6600 1975 50  0000 C CNN
+F 1 "47k" H 6600 1875 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6680 2025 50  0001 C CNN
+F 3 "~" H 6750 2025 50  0001 C CNN
+	1    6750 2025
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 1875
+Wire Wire Line
+	7050 2200 6750 2200
+Wire Wire Line
+	6750 2200 6750 2175
+$Comp
+L Device:R R1
+U 1 1 60B50B13
+P 6575 3200
+F 0 "R1" V 6700 3250 50  0000 C CNN
+F 1 "1k" V 6700 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6505 3200 50  0001 C CNN
+F 3 "~" H 6575 3200 50  0001 C CNN
+	1    6575 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 7025 3525 0    50   ~ 0
+AMP_OUT
+Wire Wire Line
+	7025 3525 7025 3400
+$Comp
+L Device:R R5
+U 1 1 60B50B1B
+P 7025 2750
+F 0 "R5" H 7150 2875 50  0000 C CNN
+F 1 "47k" H 7175 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6955 2750 50  0001 C CNN
+F 3 "~" H 7025 2750 50  0001 C CNN
+	1    7025 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR03
+U 1 1 60B50B21
+P 7025 2600
+F 0 "#PWR03" H 7025 2450 50  0001 C CNN
+F 1 "+15V" H 7040 2773 50  0000 C CNN
+F 2 "" H 7025 2600 50  0001 C CNN
+F 3 "" H 7025 2600 50  0001 C CNN
+	1    7025 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC807 Q3
+U 1 1 60B50B27
+P 7525 2900
+F 0 "Q3" H 7716 2854 50  0000 L CNN
+F 1 "BC807" H 7716 2945 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7725 2825 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC808-D.pdf" H 7525 2900 50  0001 L CNN
+	1    7525 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR05
+U 1 1 60B50B2D
+P 7625 2600
+F 0 "#PWR05" H 7625 2450 50  0001 C CNN
+F 1 "+15V" H 7640 2773 50  0000 C CNN
+F 2 "" H 7625 2600 50  0001 C CNN
+F 3 "" H 7625 2600 50  0001 C CNN
+	1    7625 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 2600 7625 2700
+$Comp
+L Device:R R9
+U 1 1 60B50B34
+P 7625 3275
+F 0 "R9" H 7775 3325 50  0000 C CNN
+F 1 "22k" H 7775 3225 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 7555 3275 50  0001 C CNN
+F 3 "~" H 7625 3275 50  0001 C CNN
+	1    7625 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR06
+U 1 1 60B50B3A
+P 7625 3425
+F 0 "#PWR06" H 7625 3525 50  0001 C CNN
+F 1 "-15V" H 7640 3598 50  0000 C CNN
+F 2 "" H 7625 3425 50  0001 C CNN
+F 3 "" H 7625 3425 50  0001 C CNN
+	1    7625 3425
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7625 3125 7625 3100
+$Comp
+L Device:R R7
+U 1 1 60B50B41
+P 7175 2900
+F 0 "R7" V 7275 2975 50  0000 C CNN
+F 1 "47k" V 7350 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 7105 2900 50  0001 C CNN
+F 3 "~" H 7175 2900 50  0001 C CNN
+	1    7175 2900
+	0    1    1    0   
+$EndComp
+Connection ~ 7025 2900
+Wire Wire Line
+	7025 2900 7025 3000
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 60B50B49
+P 6925 3200
+F 0 "Q1" H 7200 3175 50  0000 L CNN
+F 1 "2N7002" H 7100 3075 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7125 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 6925 3200 50  0001 L CNN
+	1    6925 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60B50B4F
+P 6725 3350
+F 0 "R3" H 6575 3325 50  0000 C CNN
+F 1 "47k" H 6575 3225 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 6655 3350 50  0001 C CNN
+F 3 "~" H 6725 3350 50  0001 C CNN
+	1    6725 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6725 3200
+Wire Wire Line
+	7025 3525 6725 3525
+Wire Wire Line
+	6725 3525 6725 3500
+Wire Wire Line
+	5850 1700 6450 1700
+Wire Wire Line
+	6450 1700 6450 1875
+Wire Wire Line
+	5850 1800 6400 1800
+Wire Wire Line
+	6400 1800 6400 3200
+Wire Wire Line
+	6400 3200 6425 3200
+Text Label 7850 1800 0    50   ~ 0
+CL_A
+Text Label 7800 3125 0    50   ~ 0
+CL_B
+Wire Wire Line
+	7850 1800 7650 1800
+Connection ~ 7650 1800
+Wire Wire Line
+	7800 3125 7625 3125
+Connection ~ 7625 3125
+Text Notes 5825 4050 0    50   ~ 0
+Current limit settings:\n5,6 at 0 -> 0.3mA\n5 active -> 3mA\n6 active -> 30mA\n5 and 6 active -> 200mA
+Wire Notes Line
+	8225 1850 8225 2775
+Wire Notes Line
+	8225 2775 9650 2775
+Wire Notes Line
+	9650 2775 9650 1850
+Wire Notes Line
+	9650 1850 8225 1850
+Text Notes 8250 1950 0    50   ~ 0
+Mounting holes
+Wire Notes Line
+	8225 875  8225 1800
+Wire Notes Line
+	8225 1800 9650 1800
+Wire Notes Line
+	9650 1800 9650 875 
+Wire Notes Line
+	9650 875  8225 875 
+Text Notes 8250 975  0    50   ~ 0
+Power connector, decoupling
+Wire Wire Line
+	2000 2700 3450 2700
+Wire Wire Line
+	3450 2800 3450 2700
+Connection ~ 3450 2700
+Wire Wire Line
+	3450 5525 3450 5625
+Connection ~ 3450 5625
+Wire Wire Line
+	3450 5625 3825 5625
+Wire Wire Line
+	2000 5625 3450 5625
+Wire Wire Line
+	4125 2900 4125 3425
+Wire Wire Line
+	4125 2500 4125 2425
+Wire Wire Line
+	3450 2700 3825 2700
+$Comp
+L Transistor_BJT:TIP41 Q15
+U 1 1 5FFE7F58
+P 4025 2700
+F 0 "Q15" H 4216 2746 50  0000 L CNN
+F 1 "TIP41" H 4216 2655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4275 2625 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 4025 2700 50  0001 L CNN
+	1    4025 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 60999BB8
+P 3750 3200
+F 0 "R15" V 3900 3200 50  0000 R CNN
+F 1 "DNP" V 3825 3225 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" V 3680 3200 50  0001 C CNN
+F 3 "~" H 3750 3200 50  0001 C CNN
+	1    3750 3200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3600 5125 3450 5125
+Wire Wire Line
+	3600 4825 3600 5125
+Connection ~ 3600 5125
+Wire Wire Line
+	3450 3200 3600 3200
+Wire Wire Line
+	3600 3425 3600 3200
+Connection ~ 3600 3425
+Connection ~ 3600 3200
+Wire Notes Line
+	5450 875  5450 4250
+Wire Notes Line
+	5450 4250 8175 4250
+Wire Notes Line
+	8175 4250 8175 875 
+Wire Notes Line
+	8175 875  5450 875 
+Wire Notes Line
+	5400 875  5400 7525
+Wire Notes Line
+	5400 7525 700  7525
+Wire Notes Line
+	700  7525 700  875 
+Wire Notes Line
+	700  875  5400 875 
+Text Notes 5450 975  0    50   ~ 0
+I/O connector, current limit switching
+Text Notes 725  975  0    50   ~ 0
+Main amplifier block
+$EndSCHEMATC

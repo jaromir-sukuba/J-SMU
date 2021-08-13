@@ -1,0 +1,2003 @@
+Microchip Technology Inc, v1.70 (A)
+
+Tool Name:
+  c:\program files\microchip\xc16\v1.70\bin\bin\..\bin/elf-ld.exe
+
+Command:
+  -p24HJ128GP306 \
+  -o \
+  dist/default/production/smu_front_p24.X.production.elf \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/.. \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../lib \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33C/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33F/gld \
+  build/default/production/main.o \
+  build/default/production/func.o \
+  build/default/production/hw.o \
+  --defsym=__MPLAB_BUILD=1 \
+  -Tp24HJ128GP306.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/default/production/smu_front_p24.X.production.map \
+  --report-mem \
+  --memorysummary \
+  dist/default/production/memoryfile.xml \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+
+
+Optional library libp24HJ128GP306.a not found
+Archive member included because of file (symbol)
+
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+                              (__resetPRI)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o) (__data_init_standard)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
+                              (__crt_start_mode_normal)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                              build/default/production/main.o (___delay32)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                              build/default/production/func.o (___divsi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsi3.eo) (___udivsi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                              build/default/production/func.o (___divdi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                              build/default/production/func.o (___muldi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(muldi3.eo) (___umuldi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+                              build/default/production/main.o (_memcpy)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncmp.XX_eo)
+                              build/default/production/main.o (_strncmp)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncpy.XX_eo)
+                              build/default/production/func.o (_strncpy)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo)
+                              build/default/production/main.o (_strtol)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo) (__Stoul)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_elso)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo) (_isspace)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo) (_tolower)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo) (_errno)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopuxX.XXeo)
+                              build/default/production/func.o (__sprintf_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sscanf_cdnopuxX.XXeo)
+                              build/default/production/main.o (__sscanf_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopuxX.XXeo) (___ePrintf_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo) (___Putfld_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdnopuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sscanf_cdnopuxX.XXeo) (___Scanf_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                              build/default/production/main.o (__sprintf_cdnopsuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo) (___ePrintf_cdnopsuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo) (___Putfld_cdnopsuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo) (_memchr)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo) (_strchr)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo) (_strlen)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopuxX.XXeo) (__Litob)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo) (__Puttxt)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo) (__Vacopy)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(efwrite.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo) (_efwrite)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_elo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(efwrite.XX_eo) (__DNKfflush)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_elo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_elo) (__Files)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdnopuxX.XXeo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdnopuxX.XXeo) (___Getfld_cdnopuxX)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(efwrite.XX_eo) (__Fwprep)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdnopuxX.XXeo) (__Getint)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdnopuxX.XXeo) (__Getstr)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo) (__Stoll)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo) (__Stoull)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo) (__Closreg)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (__Atexit)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_free)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo) (__Aldata)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo) (__Getmem)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_close)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_elo) (_write)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo) (_remove)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo) (_sbrk)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo) (___C30_UART)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memcpy_eds.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopuxX.XXeo) (__memcpy_eds_3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memchr_eds.Leo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo) (__memchr_eds)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo) (_brk)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo) (___umodsi3)
+c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+                              c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo) (___mulsi3)
+
+
+xc16-ld 1.70 (A)
+
+Default Code Model: Small
+Default Data Model: Large
+Default Scalar Model: Small
+
+"program" Memory  [Origin = 0x200, Length = 0x15600]
+
+section                    address   length (PC units)   length (bytes) (dec)
+-------                    -------   -----------------   --------------------
+.text                        0x200              0x2306          0x3489  (13449)
+.const                      0x2506               0x9da           0xec7  (3783)
+.text                       0x2ee0              0x1d26          0x2bb9  (11193)
+.dinit                      0x4c06               0x19a           0x267  (615)
+.init.delay32               0x4da0                0x1c            0x2a  (42)
+
+                 Total "program" memory used (bytes):         0x719a  (29082) 22%
+
+
+"data" Memory  [Origin = 0x800, Length = 0x4000]
+
+section                    address      alignment gaps    total length  (dec)
+-------                    -------      --------------    -------------------
+.nbss                        0x800                   0            0x58  (88)
+.ndata                       0x858                   0             0x4  (4)
+.bss                         0x85c                   0           0x29c  (668)
+.data                        0xaf8                   0           0x1a4  (420)
+.bss                         0xc9c                   0             0xa  (10)
+.data                        0xca6                   0             0x4  (4)
+.bss                         0xcaa                   0             0x2  (2)
+
+                 Total "data" memory used (bytes):          0x4ac  (1196) 7%
+
+
+Dynamic Memory Usage
+
+region                     address                      maximum length  (dec)
+------                     -------                      ---------------------
+heap                             0                                   0  (0)
+stack                        0xcac                              0x3b54  (15188)
+
+                 Maximum dynamic memory (bytes):         0x3b54  (15188)
+
+Info: Project is using a large data memory model when small data memory model is sufficient.
+
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  _d_blink_cnt
+                    0x0802                  _blink_mask
+                    0x0804                  _led_state_int
+                    0x0806                  _d_blink
+                    0x0807                  _d_blink_mask_cnt
+                    0x0808                  _d_blink_mask_cnt2
+                    0x0809                  _display_compliance
+                    0x080a                  _rx1_rcvd_ptr
+                    0x080b                  _rx1_rcvd_flag
+                    0x080c                  _rx2_rcvd_ptr
+                    0x080d                  _rx2_rcvd_flag
+                    0x080e                  _enc_var
+                    0x0810                  _out_state
+                    0x0811                  _out_mode
+                    0x0812                  _range_curr
+                    0x0813                  _sup_force
+                    0x0814                  _sense_remote
+                    0x0815                  _disp_state
+                    0x0816                  _menu_ptr
+                    0x0817                  _avg_enabled
+                    0x0818                  _sup_enabled
+                    0x0819                  _sup_sample_now
+                    0x081a                  _temper_hs
+                    0x081c                  _set_volt
+                    0x0820                  _set_curr
+                    0x0824                  _clamp_volt
+                    0x0828                  _clamp_curr
+                    0x082c                  _meas_volt
+                    0x0830                  _meas_cur
+                    0x0834                  _rb_adc_val_1
+                    0x0838                  _rb_adc_val_2
+                    0x083c                  _keys
+                    0x083e                  _keys_new
+                    0x0840                  _keys_old
+                    0x0842                  _led_state
+                    0x0844                  _menu_items_val
+                    0x0852                  _msg_queue_ptr
+                    0x0853                  _rb_adc_arr_ptr
+                    0x0854                  _mb_msg_in_wait
+                    0x0855                  _mb_msg_out_rdy
+                    0x0858                  _range_volt
+                    0x0859                  _edit_ptr
+                    0x085a                  _sup_meas
+                    0x085b                  _rb_adc_arr_len
+                    0x085c                  _disp_msg
+                    0x087a                  _d_pixelmap
+                    0x089e                  _keymap
+                    0x08a1                  _rx1_rcvd_str
+                    0x08bf                  _rx2_rcvd_str
+                    0x08de                  _cal_const
+                    0x09b6                  _msg_in_queue
+                    0x0a33                  _mb_msg_in_buf
+                    0x0a51                  _mb_msg_out_buf
+                    0x0a70                  _rb_adc_arr_1
+                    0x0ab4                  _rb_adc_arr_2
+                    0x0af8                  __Stdin
+                    0x0b20                  __Stdout
+                    0x0b48                  __Stderr
+                    0x0b70                  __Files
+                    0x0c9c                  _errno
+                    0x0c9e                  __Tls_setup_errno
+                    0x0ca0                  __Aldata
+                    0x0ca6                  __Size_block
+                    0x0ca8                  ___C30_UART
+                    0x0caa                  ___curbrk
+
+External Symbols in Data Memory (by name):
+
+                    0x0ca0                  __Aldata
+                    0x0b70                  __Files
+                    0x0ca6                  __Size_block
+                    0x0b48                  __Stderr
+                    0x0af8                  __Stdin
+                    0x0b20                  __Stdout
+                    0x0c9e                  __Tls_setup_errno
+                    0x0ca8                  ___C30_UART
+                    0x0caa                  ___curbrk
+                    0x0817                  _avg_enabled
+                    0x0802                  _blink_mask
+                    0x08de                  _cal_const
+                    0x0828                  _clamp_curr
+                    0x0824                  _clamp_volt
+                    0x0806                  _d_blink
+                    0x0800                  _d_blink_cnt
+                    0x0807                  _d_blink_mask_cnt
+                    0x0808                  _d_blink_mask_cnt2
+                    0x087a                  _d_pixelmap
+                    0x085c                  _disp_msg
+                    0x0815                  _disp_state
+                    0x0809                  _display_compliance
+                    0x0859                  _edit_ptr
+                    0x080e                  _enc_var
+                    0x0c9c                  _errno
+                    0x089e                  _keymap
+                    0x083c                  _keys
+                    0x083e                  _keys_new
+                    0x0840                  _keys_old
+                    0x0842                  _led_state
+                    0x0804                  _led_state_int
+                    0x0a33                  _mb_msg_in_buf
+                    0x0854                  _mb_msg_in_wait
+                    0x0a51                  _mb_msg_out_buf
+                    0x0855                  _mb_msg_out_rdy
+                    0x0830                  _meas_cur
+                    0x082c                  _meas_volt
+                    0x0844                  _menu_items_val
+                    0x0816                  _menu_ptr
+                    0x09b6                  _msg_in_queue
+                    0x0852                  _msg_queue_ptr
+                    0x0811                  _out_mode
+                    0x0810                  _out_state
+                    0x0812                  _range_curr
+                    0x0858                  _range_volt
+                    0x0a70                  _rb_adc_arr_1
+                    0x0ab4                  _rb_adc_arr_2
+                    0x085b                  _rb_adc_arr_len
+                    0x0853                  _rb_adc_arr_ptr
+                    0x0834                  _rb_adc_val_1
+                    0x0838                  _rb_adc_val_2
+                    0x080b                  _rx1_rcvd_flag
+                    0x080a                  _rx1_rcvd_ptr
+                    0x08a1                  _rx1_rcvd_str
+                    0x080d                  _rx2_rcvd_flag
+                    0x080c                  _rx2_rcvd_ptr
+                    0x08bf                  _rx2_rcvd_str
+                    0x0814                  _sense_remote
+                    0x0820                  _set_curr
+                    0x081c                  _set_volt
+                    0x0818                  _sup_enabled
+                    0x0813                  _sup_force
+                    0x085a                  _sup_meas
+                    0x0819                  _sup_sample_now
+                    0x081a                  _temper_hs
+
+External Symbols in Program Memory (by address):
+
+                  0x000200                  __resetPRI
+                  0x00023c                  __psv_init
+                  0x000252                  __data_init_standard
+                  0x000252                  __data_init
+                  0x0002e4                  __U1RXInterrupt
+                  0x00033c                  __U2RXInterrupt
+                  0x000394                  __T1Interrupt
+                  0x000554                  __T3Interrupt
+                  0x0005fe                  __DefaultInterrupt
+                  0x0006ee                  ___divsi3
+                  0x00070c                  ___udivsi3
+                  0x000778                  ___udivmoddi3
+                  0x00085e                  ___udivdi3
+                  0x00086c                  ___umoddi3
+                  0x000874                  ___divdi3
+                  0x0008d4                  ___moddi3
+                  0x000930                  ___muldi3
+                  0x000982                  ___umuldi3
+                  0x0009c6                  _memcpy
+                  0x0009d4                  _strncmp
+                  0x0009fc                  _strncpy
+                  0x000a1a                  _strtol
+                  0x000aae                  __Stoul
+                  0x000be6                  _isspace
+                  0x000bf6                  _tolower
+                  0x000c04                  __Geterrno
+                  0x000c10                  sscanf_cdnopuxX.XXeo:_scin
+                  0x000c28                  __sscanf_cdnopuxX
+                  0x000c3a                  xprintf_cdnopuxX.XXeo:_eprout
+                  0x000c58                  ___ePrintf_cdnopuxX
+                  0x000dd8                  ___Scanf_cdnopuxX
+                  0x000f68                  sprintf_cdnopsuxX.XXeo:_eprout
+                  0x000f82                  sprintf_cdnopsuxX.XXeo:_prout
+                  0x000f90                  __sprintf_cdnopuxX
+                  0x000f90                  __sprintf_cdnopsuxX
+                  0x000fb0                  xprintf_cdnopsuxX.XXeo:_eprout
+                  0x000fce                  ___ePrintf_cdnopsuxX
+                  0x001144                  ___Printf_cdnopsuxX
+                  0x001144                  ___Printf_cdnopuxX
+                  0x00114e                  ___Putfld_cdnopsuxX
+                  0x00114e                  ___Putfld_cdnopuxX
+                  0x0013e2                  _memchr
+                  0x0013f6                  _strchr
+                  0x00140e                  _strlen
+                  0x00141a                  __Litob
+                  0x001678                  __Puttxt
+                  0x00182c                  __Vacopy
+                  0x001830                  _efwrite
+                  0x001908                  __DNKfflush
+                  0x00197e                  ___Getfld_cdnopuxX
+                  0x001ab6                  __Fwprep
+                  0x001b44                  __Getint
+                  0x001e3a                  __Getstr
+                  0x002028                  __Stoll
+                  0x0020d8                  __Stoull
+                  0x00226c                  __Closreg
+                  0x00227e                  _fclose
+                  0x00230e                  fclose.XX_elo:_closeall
+                  0x00232e                  __Atexit
+                  0x002346                  _free
+                  0x002410                  _malloc
+                  0x002464                  __Getmem
+                  0x002484                  __memcpy_eds_3
+                  0x002484                  __memcpy_eds
+                  0x0024be                  __memchr_eds
+                  0x0024f4                  ___umodsi3
+                  0x0024fa                  ___mulp32peds3
+                  0x0024fa                  ___mulsi3
+                  0x0024fa                  ___mulp32eds3
+                  0x002506                  _cal_val_desc
+                  0x002b8e                  _menu_items_text
+                  0x002bd6                  _menu_items_limit_max
+                  0x002bde                  _menu_items_limit_min
+                  0x002e20                  _ASCII
+                  0x002ee0                  _serial_tasks
+                  0x003300                  _display_main_values
+                  0x0036c8                  _key_handling_def
+                  0x003920                  _front_panel_def
+                  0x003a40                  _display_menu
+                  0x003a9a                  _key_handling_menu
+                  0x003b02                  _front_panel_menu
+                  0x003b98                  _main
+                  0x003eac                  _mainboard_msg_enqueue
+                  0x003f24                  _mainboard_msg_dequeue
+                  0x003f84                  _mainboard_msg_qlen
+                  0x003f8c                  _mainboard_comms
+                  0x004106                  _mainboard_rv_enqueue
+                  0x004140                  _mainboard_ri_enqueue
+                  0x004192                  _mainboard_dac_enqueue
+                  0x0041c0                  _get_dac_volt
+                  0x00420a                  _get_dac_curr
+                  0x004254                  _get_dac_cvolt
+                  0x004292                  _get_dac_ccurr
+                  0x0042d0                  _enc_set_long
+                  0x004370                  _enc_inc_int
+                  0x004390                  _get_volt_from_adc
+                  0x0043d8                  _get_curr_from_adc
+                  0x004420                  _conv_adc_temp
+                  0x004460                  _adjust_long_offset_gain
+                  0x0044b6                  _get_cal_const_num
+                  0x0044d8                  _set_cal_const_num
+                  0x0044fa                  _ee_write_cal_consts
+                  0x004534                  _ee_read_cal_consts
+                  0x00456e                  _uart1_tx
+                  0x004586                  _uart1_txs
+                  0x0045a0                  _uart2_tx
+                  0x0045b8                  _uart2_txs
+                  0x0045d2                  _sr_shiftout
+                  0x004620                  _d_anode
+                  0x00466c                  _segment_order
+                  0x004726                  _spi_trf
+                  0x004790                  _exp_write
+                  0x0047b2                  _exp_read
+                  0x0047d6                  _map_keys
+                  0x004884                  _map_leds
+                  0x0048f6                  _ee_spi_trf
+                  0x004960                  _ee_wren
+                  0x004976                  _ee_wrdi
+                  0x00498c                  _ee_rdsr
+                  0x0049aa                  _ee_read_byte
+                  0x0049d8                  _ee_write_byte
+                  0x004a2a                  _ee_write_page
+                  0x004a9a                  _ee_read_page
+                  0x004ae2                  _ee_read_long
+                  0x004afa                  _ee_write_long
+                  0x004b12                  _get_adc
+                  0x004b2c                  _set_fan_speed
+                  0x004b68                  _get_compliance_pin_state
+                  0x004b7e                  _hw_init
+                  0x004da0                  ___delay32
+
+External Symbols in Program Memory (by name):
+
+                  0x002e20                  _ASCII
+                  0x00232e                  __Atexit
+                  0x00226c                  __Closreg
+                  0x001908                  __DNKfflush
+                  0x0005fe                  __DefaultInterrupt
+                  0x001ab6                  __Fwprep
+                  0x000c04                  __Geterrno
+                  0x001b44                  __Getint
+                  0x002464                  __Getmem
+                  0x001e3a                  __Getstr
+                  0x00141a                  __Litob
+                  0x001678                  __Puttxt
+                  0x002028                  __Stoll
+                  0x000aae                  __Stoul
+                  0x0020d8                  __Stoull
+                  0x000394                  __T1Interrupt
+                  0x000554                  __T3Interrupt
+                  0x0002e4                  __U1RXInterrupt
+                  0x00033c                  __U2RXInterrupt
+                  0x00182c                  __Vacopy
+                  0x00197e                  ___Getfld_cdnopuxX
+                  0x001144                  ___Printf_cdnopsuxX
+                  0x001144                  ___Printf_cdnopuxX
+                  0x00114e                  ___Putfld_cdnopsuxX
+                  0x00114e                  ___Putfld_cdnopuxX
+                  0x000dd8                  ___Scanf_cdnopuxX
+                  0x004da0                  ___delay32
+                  0x000874                  ___divdi3
+                  0x0006ee                  ___divsi3
+                  0x000fce                  ___ePrintf_cdnopsuxX
+                  0x000c58                  ___ePrintf_cdnopuxX
+                  0x0008d4                  ___moddi3
+                  0x000930                  ___muldi3
+                  0x0024fa                  ___mulp32eds3
+                  0x0024fa                  ___mulp32peds3
+                  0x0024fa                  ___mulsi3
+                  0x00085e                  ___udivdi3
+                  0x000778                  ___udivmoddi3
+                  0x00070c                  ___udivsi3
+                  0x00086c                  ___umoddi3
+                  0x0024f4                  ___umodsi3
+                  0x000982                  ___umuldi3
+                  0x000252                  __data_init
+                  0x000252                  __data_init_standard
+                  0x0024be                  __memchr_eds
+                  0x002484                  __memcpy_eds
+                  0x002484                  __memcpy_eds_3
+                  0x00023c                  __psv_init
+                  0x000200                  __resetPRI
+                  0x000f90                  __sprintf_cdnopsuxX
+                  0x000f90                  __sprintf_cdnopuxX
+                  0x000c28                  __sscanf_cdnopuxX
+                  0x004460                  _adjust_long_offset_gain
+                  0x002506                  _cal_val_desc
+                  0x004420                  _conv_adc_temp
+                  0x004620                  _d_anode
+                  0x003300                  _display_main_values
+                  0x003a40                  _display_menu
+                  0x00498c                  _ee_rdsr
+                  0x0049aa                  _ee_read_byte
+                  0x004534                  _ee_read_cal_consts
+                  0x004ae2                  _ee_read_long
+                  0x004a9a                  _ee_read_page
+                  0x0048f6                  _ee_spi_trf
+                  0x004976                  _ee_wrdi
+                  0x004960                  _ee_wren
+                  0x0049d8                  _ee_write_byte
+                  0x0044fa                  _ee_write_cal_consts
+                  0x004afa                  _ee_write_long
+                  0x004a2a                  _ee_write_page
+                  0x001830                  _efwrite
+                  0x004370                  _enc_inc_int
+                  0x0042d0                  _enc_set_long
+                  0x0047b2                  _exp_read
+                  0x004790                  _exp_write
+                  0x00227e                  _fclose
+                  0x002346                  _free
+                  0x003920                  _front_panel_def
+                  0x003b02                  _front_panel_menu
+                  0x004b12                  _get_adc
+                  0x0044b6                  _get_cal_const_num
+                  0x004b68                  _get_compliance_pin_state
+                  0x0043d8                  _get_curr_from_adc
+                  0x004292                  _get_dac_ccurr
+                  0x00420a                  _get_dac_curr
+                  0x004254                  _get_dac_cvolt
+                  0x0041c0                  _get_dac_volt
+                  0x004390                  _get_volt_from_adc
+                  0x004b7e                  _hw_init
+                  0x000be6                  _isspace
+                  0x0036c8                  _key_handling_def
+                  0x003a9a                  _key_handling_menu
+                  0x003b98                  _main
+                  0x003f8c                  _mainboard_comms
+                  0x004192                  _mainboard_dac_enqueue
+                  0x003f24                  _mainboard_msg_dequeue
+                  0x003eac                  _mainboard_msg_enqueue
+                  0x003f84                  _mainboard_msg_qlen
+                  0x004140                  _mainboard_ri_enqueue
+                  0x004106                  _mainboard_rv_enqueue
+                  0x002410                  _malloc
+                  0x0047d6                  _map_keys
+                  0x004884                  _map_leds
+                  0x0013e2                  _memchr
+                  0x0009c6                  _memcpy
+                  0x002bd6                  _menu_items_limit_max
+                  0x002bde                  _menu_items_limit_min
+                  0x002b8e                  _menu_items_text
+                  0x00466c                  _segment_order
+                  0x002ee0                  _serial_tasks
+                  0x0044d8                  _set_cal_const_num
+                  0x004b2c                  _set_fan_speed
+                  0x004726                  _spi_trf
+                  0x0045d2                  _sr_shiftout
+                  0x0013f6                  _strchr
+                  0x00140e                  _strlen
+                  0x0009d4                  _strncmp
+                  0x0009fc                  _strncpy
+                  0x000a1a                  _strtol
+                  0x000bf6                  _tolower
+                  0x00456e                  _uart1_tx
+                  0x004586                  _uart1_txs
+                  0x0045a0                  _uart2_tx
+                  0x0045b8                  _uart2_txs
+                  0x00230e                  fclose.XX_elo:_closeall
+                  0x000f68                  sprintf_cdnopsuxX.XXeo:_eprout
+                  0x000f82                  sprintf_cdnopsuxX.XXeo:_prout
+                  0x000c10                  sscanf_cdnopuxX.XXeo:_scin
+                  0x000fb0                  xprintf_cdnopsuxX.XXeo:_eprout
+                  0x000c3a                  xprintf_cdnopuxX.XXeo:_eprout
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+data             0x000800           0x004000           a !xr
+reset            0x000000           0x000004  
+ivt              0x000004           0x0000fc  
+_reserved        0x000100           0x000004  
+aivt             0x000104           0x0000fc  
+program          0x000200           0x015600           xr
+FBS              0xf80000           0x000002  
+FSS              0xf80002           0x000002  
+FGS              0xf80004           0x000002  
+FOSCSEL          0xf80006           0x000002  
+FOSC             0xf80008           0x000002  
+FWDT             0xf8000a           0x000002  
+FPOR             0xf8000c           0x000002  
+FICD             0xf8000e           0x000002  
+FUID0            0xf80010           0x000002  
+FUID1            0xf80012           0x000002  
+FUID2            0xf80014           0x000002  
+FUID3            0xf80016           0x000002  
+*default*        0x000000           0xffffffff  
+
+Linker script and memory map
+
+LOAD build/default/production/main.o
+LOAD build/default/production/func.o
+LOAD build/default/production/hw.o
+                    0x0001                  __MPLAB_BUILD = 0x1
+LOAD p24HJ128GP306
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libfx-elf.a
+                    0xf80000                  __FBS = 0xf80000
+                    0xf80002                  __FSS = 0xf80002
+                    0xf80004                  __FGS = 0xf80004
+                    0xf80006                  __FOSCSEL = 0xf80006
+                    0xf80008                  __FOSC = 0xf80008
+                    0xf8000a                  __FWDT = 0xf8000a
+                    0xf8000c                  __FPOR = 0xf8000c
+                    0xf8000e                  __FICD = 0xf8000e
+                    0xf80010                  __FUID0 = 0xf80010
+                    0xf80012                  __FUID1 = 0xf80012
+                    0xf80014                  __FUID2 = 0xf80014
+                    0xf80016                  __FUID3 = 0xf80016
+                    0x0200                  __CODE_BASE = 0x200
+                    0x15600                  __CODE_LENGTH = 0x15600
+                    0x0004                  __IVT_BASE = 0x4
+                    0x0104                  __AIVT_BASE = 0x104
+                    0x0800                  __DATA_BASE = 0x800
+                    0x4000                  __DATA_LENGTH = 0x4000
+                    0x4000                  __DMA_BASE = 0x4000
+                    0x47ff                  __DMA_END = 0x47ff
+
+.reset            0x000000          0x4
+                  0x000000          0x2 SHORT 0x200 ABSOLUTE (__reset)
+                  0x000001          0x2 SHORT 0x4
+                  0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
+                  0x000003          0x2 SHORT 0x0
+
+.text             0x000200       0x2306
+ *(.init)
+ .init            0x000200         0x4c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+                  0x000200                  __resetPRI
+                  0x000200                  __reset
+                  0x00023c                  __psv_init
+ .init            0x00024c         0x7c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+                  0x000252                  __data_init_standard
+                  0x000252                  __data_init
+ *(.user_init)
+ *(.handle)
+ .handle          0x0002c8         0x1c jump_table
+ *(.isr*)
+ .isr.text        0x0002e4        0x31a build/default/production/main.o
+                  0x0002e4                  __U1RXInterrupt
+                  0x00033c                  __U2RXInterrupt
+                  0x000394                  __T1Interrupt
+                  0x000554                  __T3Interrupt
+ .isr             0x0005fe          0x4 default_isr
+                  0x0005fe                  __DefaultInterrupt
+ *(.libc)
+ .libc            0x000602         0x12 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+                  0x000602                  _close
+ .libc            0x000614         0x84 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+                  0x000614                  _write
+ .libc            0x000698         0x12 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+                  0x000698                  _remove
+ .libc            0x0006aa         0x28 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+                  0x0006aa                  _sbrk
+ .libc            0x0006d2         0x1a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                  0x0006d2                  _brk
+ *(.libm)
+ *(.libdsp)
+ *(.lib*)
+ .libpic30_crt_start_mode
+                  0x0006ec          0x2 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
+                  0x0006ec                  __crt_start_mode
+                  0x0006ec                  __crt_start_mode_normal
+ .libm.divsi3     0x0006ee         0x1e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+                  0x0006ee                  ___divsi3
+ .libm.udivsi3    0x00070c         0x20 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+                  0x00070c                  ___udivsi3
+ .libm.__PplusBdi
+                  0x00072c         0x26 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__PminusBdi
+                  0x000752         0x26 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ .libm.__udivmoddi3
+                  0x000778         0xe6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000778                  ___udivmoddi3
+ .libm.__udivdi3
+                  0x00085e          0xe c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x00085e                  ___udivdi3
+ .libm.__umoddi3
+                  0x00086c          0x8 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x00086c                  ___umoddi3
+ .libm.__divdi3
+                  0x000874         0x60 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x000874                  ___divdi3
+ .libm.__moddi3
+                  0x0008d4         0x5c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+                  0x0008d4                  ___moddi3
+ .libm.__muldi3
+                  0x000930         0x52 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+                  0x000930                  ___muldi3
+ .libm.umuldi3    0x000982         0x44 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+                  0x000982                  ___umuldi3
+ .libc.memcpy     0x0009c6          0xe c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+                  0x0009c6                  _memcpy
+ .libc.strncmp    0x0009d4         0x28 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncmp.XX_eo)
+                  0x0009d4                  _strncmp
+ .libc.strncpy    0x0009fc         0x1e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncpy.XX_eo)
+                  0x0009fc                  _strncpy
+ .libc.strtol     0x000a1a         0x94 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo)
+                  0x000a1a                  _strtol
+ .libc._Stoul     0x000aae        0x138 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo)
+                  0x000aae                  __Stoul
+ .libc.isspace    0x000be6         0x10 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_elso)
+                  0x000be6                  _isspace
+ .libc.tolower    0x000bf6          0xe c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+                  0x000bf6                  _tolower
+ .libc._Geterrno
+                  0x000c04          0xc c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                  0x000c04                  __Geterrno
+ .libc.scin       0x000c10         0x18 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sscanf_cdnopuxX.XXeo)
+                  0x000c10                  sscanf_cdnopuxX.XXeo:_scin
+ .libc._sscanf_cdnopuxX
+                  0x000c28         0x12 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sscanf_cdnopuxX.XXeo)
+                  0x000c28                  __sscanf_cdnopuxX
+ .libc.eprout     0x000c3a         0x1e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+                  0x000c3a                  xprintf_cdnopuxX.XXeo:_eprout
+ .libc.__ePrintf_cdnopuxX
+                  0x000c58        0x176 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+                  0x000c58                  ___ePrintf_cdnopuxX
+ .libc.__Printf_cdnopuxX
+                  0x000dce          0xa c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+ .libc.__Scanf_cdnopuxX
+                  0x000dd8        0x190 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdnopuxX.XXeo)
+                  0x000dd8                  ___Scanf_cdnopuxX
+ .libc.eprout     0x000f68         0x1a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                  0x000f68                  sprintf_cdnopsuxX.XXeo:_eprout
+ .libc.prout      0x000f82          0xe c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                  0x000f82                  sprintf_cdnopsuxX.XXeo:_prout
+ .libc._sprintf_cdnopsuxX
+                  0x000f90         0x20 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+                  0x000f90                  __sprintf_cdnopuxX
+                  0x000f90                  __sprintf_cdnopsuxX
+ .libc.eprout     0x000fb0         0x1e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                  0x000fb0                  xprintf_cdnopsuxX.XXeo:_eprout
+ .libc.__ePrintf_cdnopsuxX
+                  0x000fce        0x176 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                  0x000fce                  ___ePrintf_cdnopsuxX
+ .libc.__Printf_cdnopsuxX
+                  0x001144          0xa c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+                  0x001144                  ___Printf_cdnopuxX
+                  0x001144                  ___Printf_cdnopsuxX
+ .libc.__Putfld_cdnopsuxX
+                  0x00114e        0x294 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+                  0x00114e                  ___Putfld_cdnopsuxX
+                  0x00114e                  ___Putfld_cdnopuxX
+ .libc.memchr     0x0013e2         0x14 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+                  0x0013e2                  _memchr
+ .libc.strchr     0x0013f6         0x18 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+                  0x0013f6                  _strchr
+ .libc.strlen     0x00140e          0xc c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+                  0x00140e                  _strlen
+ .libc._Litob     0x00141a        0x25e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+                  0x00141a                  __Litob
+ .libc._Puttxt    0x001678        0x1b4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+                  0x001678                  __Puttxt
+ .libc._Vacopy    0x00182c          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+                  0x00182c                  __Vacopy
+ .libc.efwrite    0x001830         0xd8 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(efwrite.XX_eo)
+                  0x001830                  _efwrite
+ .libc._DNKfflush
+                  0x001908         0x76 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_elo)
+                  0x001908                  __DNKfflush
+ .libc.__Getfld_cdnopuxX
+                  0x00197e        0x138 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdnopuxX.XXeo)
+                  0x00197e                  ___Getfld_cdnopuxX
+ .libc._Fwprep    0x001ab6         0x8e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+                  0x001ab6                  __Fwprep
+ .libc._Getint    0x001b44        0x2bc c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+                  0x001b44                  __Getint
+ .libc.ranmatch
+                  0x001e00         0x3a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+ .libc._Getstr    0x001e3a        0x1ee c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+                  0x001e3a                  __Getstr
+ .libc._Stoll     0x002028         0xb0 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+                  0x002028                  __Stoll
+ .libc._Stoull    0x0020d8        0x190 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+                  0x0020d8                  __Stoull
+ .libc.closeallreg
+                  0x002268          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+ .libc._Closreg
+                  0x00226c         0x12 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00226c                  __Closreg
+ .libc.fclose     0x00227e         0x90 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00227e                  _fclose
+ .libc.closeall
+                  0x00230e         0x20 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+                  0x00230e                  fclose.XX_elo:_closeall
+ .libc._Atexit    0x00232e         0x18 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+                  0x00232e                  __Atexit
+ .libc.free       0x002346         0x64 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+                  0x002346                  _free
+ .libc.findmem    0x0023aa         0x66 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ .libc.malloc     0x002410         0x54 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                  0x002410                  _malloc
+ .libc._Getmem    0x002464         0x14 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+                  0x002464                  __Getmem
+ .libc.doclose    0x002478          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+ .libc.dowrite    0x00247c          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+ .libc.doremove
+                  0x002480          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+ .libc.memcpy_eds
+                  0x002484         0x3a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memcpy_eds.Leo)
+                  0x002484                  __memcpy_eds_3
+                  0x002484                  __memcpy_eds
+ .libc._memchr_eds
+                  0x0024be         0x36 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memchr_eds.Leo)
+                  0x0024be                  __memchr_eds
+ .libm.umodsi3    0x0024f4          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+                  0x0024f4                  ___umodsi3
+ .libm.mulsi3     0x0024fa          0xc c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+                  0x0024fa                  ___mulp32peds3
+                  0x0024fa                  ___mulsi3
+                  0x0024fa                  ___mulp32eds3
+
+usercode
+ *(usercode)
+
+__FBS
+ *(__FBS.sec*)
+
+__FSS
+ *(__FSS.sec*)
+
+__FGS
+ *(__FGS.sec*)
+
+__FOSCSEL
+ *(__FOSCSEL.sec*)
+
+__FOSC
+ *(__FOSC.sec*)
+
+__FWDT
+ *(__FWDT.sec*)
+
+__FPOR
+ *(__FPOR.sec*)
+
+__FICD
+ *(__FICD.sec*)
+
+__FUID0
+ *(__FUID0.sec*)
+
+__FUID1
+ *(__FUID1.sec*)
+
+__FUID2
+ *(__FUID2.sec*)
+
+__FUID3
+ *(__FUID3.sec*)
+
+.comment          0x000000         0x5e
+ *(.comment)
+ .comment         0x000000         0x5e c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_elo)
+
+.debug_info       0x000000       0x3973
+ *(.debug_info)
+ .debug_info      0x000000       0x12e8 build/default/production/main.o
+ .debug_info      0x0012e8        0xc14 build/default/production/func.o
+ .debug_info      0x001efc       0x1a77 build/default/production/hw.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev     0x000000        0x59e
+ *(.debug_abbrev)
+ .debug_abbrev    0x000000        0x1f9 build/default/production/main.o
+ .debug_abbrev    0x0001f9        0x1a9 build/default/production/func.o
+ .debug_abbrev    0x0003a2        0x1fc build/default/production/hw.o
+
+.debug_line       0x000000        0x619
+ *(.debug_line)
+ .debug_line      0x000000        0x309 build/default/production/main.o
+ .debug_line      0x000309        0x11a build/default/production/func.o
+ .debug_line      0x000423        0x1f6 build/default/production/hw.o
+
+.debug_frame      0x000000        0x81e
+ *(.debug_frame)
+ .debug_frame     0x000000        0x322 build/default/production/main.o
+ .debug_frame     0x000322        0x244 build/default/production/func.o
+ .debug_frame     0x000566        0x2b8 build/default/production/hw.o
+
+.debug_str        0x000000        0x447
+ *(.debug_str)
+ .debug_str       0x000000        0x264 build/default/production/main.o
+ .debug_str       0x000264        0x11a build/default/production/func.o
+ .debug_str       0x00037e         0xc9 build/default/production/hw.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubnames
+                  0x000000        0x82b
+ *(.debug_pubnames)
+ .debug_pubnames
+                  0x000000        0x3fa build/default/production/main.o
+ .debug_pubnames
+                  0x0003fa        0x28d build/default/production/func.o
+ .debug_pubnames
+                  0x000687        0x1a4 build/default/production/hw.o
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_aranges    0x000000         0x48
+ *(.debug_aranges)
+ .debug_aranges
+                  0x000000         0x18 build/default/production/main.o
+ .debug_aranges
+                  0x000018         0x18 build/default/production/func.o
+ .debug_aranges
+                  0x000030         0x18 build/default/production/hw.o
+                    0x0000                  WREG0 = 0x0
+                    0x0000                  _WREG0 = 0x0
+                    0x0002                  WREG1 = 0x2
+                    0x0002                  _WREG1 = 0x2
+                    0x0004                  WREG2 = 0x4
+                    0x0004                  _WREG2 = 0x4
+                    0x0006                  WREG3 = 0x6
+                    0x0006                  _WREG3 = 0x6
+                    0x0008                  WREG4 = 0x8
+                    0x0008                  _WREG4 = 0x8
+                    0x000a                  WREG5 = 0xa
+                    0x000a                  _WREG5 = 0xa
+                    0x000c                  WREG6 = 0xc
+                    0x000c                  _WREG6 = 0xc
+                    0x000e                  WREG7 = 0xe
+                    0x000e                  _WREG7 = 0xe
+                    0x0010                  WREG8 = 0x10
+                    0x0010                  _WREG8 = 0x10
+                    0x0012                  WREG9 = 0x12
+                    0x0012                  _WREG9 = 0x12
+                    0x0014                  WREG10 = 0x14
+                    0x0014                  _WREG10 = 0x14
+                    0x0016                  WREG11 = 0x16
+                    0x0016                  _WREG11 = 0x16
+                    0x0018                  WREG12 = 0x18
+                    0x0018                  _WREG12 = 0x18
+                    0x001a                  WREG13 = 0x1a
+                    0x001a                  _WREG13 = 0x1a
+                    0x001c                  WREG14 = 0x1c
+                    0x001c                  _WREG14 = 0x1c
+                    0x001e                  WREG15 = 0x1e
+                    0x001e                  _WREG15 = 0x1e
+                    0x0020                  SPLIM = 0x20
+                    0x0020                  _SPLIM = 0x20
+                    0x002e                  PCL = 0x2e
+                    0x002e                  _PCL = 0x2e
+                    0x0030                  PCH = 0x30
+                    0x0030                  _PCH = 0x30
+                    0x0032                  TBLPAG = 0x32
+                    0x0032                  _TBLPAG = 0x32
+                    0x0034                  PSVPAG = 0x34
+                    0x0034                  _PSVPAG = 0x34
+                    0x0036                  RCOUNT = 0x36
+                    0x0036                  _RCOUNT = 0x36
+                    0x0042                  SR = 0x42
+                    0x0042                  _SR = 0x42
+                    0x0042                  _SRbits = 0x42
+                    0x0044                  CORCON = 0x44
+                    0x0044                  _CORCON = 0x44
+                    0x0044                  _CORCONbits = 0x44
+                    0x0052                  DISICNT = 0x52
+                    0x0052                  _DISICNT = 0x52
+                    0x0060                  CNEN1 = 0x60
+                    0x0060                  _CNEN1 = 0x60
+                    0x0060                  _CNEN1bits = 0x60
+                    0x0062                  CNEN2 = 0x62
+                    0x0062                  _CNEN2 = 0x62
+                    0x0062                  _CNEN2bits = 0x62
+                    0x0068                  CNPU1 = 0x68
+                    0x0068                  _CNPU1 = 0x68
+                    0x0068                  _CNPU1bits = 0x68
+                    0x006a                  CNPU2 = 0x6a
+                    0x006a                  _CNPU2 = 0x6a
+                    0x006a                  _CNPU2bits = 0x6a
+                    0x0080                  INTCON1 = 0x80
+                    0x0080                  _INTCON1 = 0x80
+                    0x0080                  _INTCON1bits = 0x80
+                    0x0082                  INTCON2 = 0x82
+                    0x0082                  _INTCON2 = 0x82
+                    0x0082                  _INTCON2bits = 0x82
+                    0x0084                  IFS0 = 0x84
+                    0x0084                  _IFS0 = 0x84
+                    0x0084                  _IFS0bits = 0x84
+                    0x0086                  IFS1 = 0x86
+                    0x0086                  _IFS1 = 0x86
+                    0x0086                  _IFS1bits = 0x86
+                    0x0088                  IFS2 = 0x88
+                    0x0088                  _IFS2 = 0x88
+                    0x0088                  _IFS2bits = 0x88
+                    0x008a                  IFS3 = 0x8a
+                    0x008a                  _IFS3 = 0x8a
+                    0x008a                  _IFS3bits = 0x8a
+                    0x008c                  IFS4 = 0x8c
+                    0x008c                  _IFS4 = 0x8c
+                    0x008c                  _IFS4bits = 0x8c
+                    0x0094                  IEC0 = 0x94
+                    0x0094                  _IEC0 = 0x94
+                    0x0094                  _IEC0bits = 0x94
+                    0x0096                  IEC1 = 0x96
+                    0x0096                  _IEC1 = 0x96
+                    0x0096                  _IEC1bits = 0x96
+                    0x0098                  IEC2 = 0x98
+                    0x0098                  _IEC2 = 0x98
+                    0x0098                  _IEC2bits = 0x98
+                    0x009a                  IEC3 = 0x9a
+                    0x009a                  _IEC3 = 0x9a
+                    0x009a                  _IEC3bits = 0x9a
+                    0x009c                  IEC4 = 0x9c
+                    0x009c                  _IEC4 = 0x9c
+                    0x009c                  _IEC4bits = 0x9c
+                    0x00a4                  IPC0 = 0xa4
+                    0x00a4                  _IPC0 = 0xa4
+                    0x00a4                  _IPC0bits = 0xa4
+                    0x00a6                  IPC1 = 0xa6
+                    0x00a6                  _IPC1 = 0xa6
+                    0x00a6                  _IPC1bits = 0xa6
+                    0x00a8                  IPC2 = 0xa8
+                    0x00a8                  _IPC2 = 0xa8
+                    0x00a8                  _IPC2bits = 0xa8
+                    0x00aa                  IPC3 = 0xaa
+                    0x00aa                  _IPC3 = 0xaa
+                    0x00aa                  _IPC3bits = 0xaa
+                    0x00ac                  IPC4 = 0xac
+                    0x00ac                  _IPC4 = 0xac
+                    0x00ac                  _IPC4bits = 0xac
+                    0x00ae                  IPC5 = 0xae
+                    0x00ae                  _IPC5 = 0xae
+                    0x00ae                  _IPC5bits = 0xae
+                    0x00b0                  IPC6 = 0xb0
+                    0x00b0                  _IPC6 = 0xb0
+                    0x00b0                  _IPC6bits = 0xb0
+                    0x00b2                  IPC7 = 0xb2
+                    0x00b2                  _IPC7 = 0xb2
+                    0x00b2                  _IPC7bits = 0xb2
+                    0x00b4                  IPC8 = 0xb4
+                    0x00b4                  _IPC8 = 0xb4
+                    0x00b4                  _IPC8bits = 0xb4
+                    0x00b6                  IPC9 = 0xb6
+                    0x00b6                  _IPC9 = 0xb6
+                    0x00b6                  _IPC9bits = 0xb6
+                    0x00b8                  IPC10 = 0xb8
+                    0x00b8                  _IPC10 = 0xb8
+                    0x00b8                  _IPC10bits = 0xb8
+                    0x00ba                  IPC11 = 0xba
+                    0x00ba                  _IPC11 = 0xba
+                    0x00ba                  _IPC11bits = 0xba
+                    0x00bc                  IPC12 = 0xbc
+                    0x00bc                  _IPC12 = 0xbc
+                    0x00bc                  _IPC12bits = 0xbc
+                    0x00be                  IPC13 = 0xbe
+                    0x00be                  _IPC13 = 0xbe
+                    0x00be                  _IPC13bits = 0xbe
+                    0x00c2                  IPC15 = 0xc2
+                    0x00c2                  _IPC15 = 0xc2
+                    0x00c2                  _IPC15bits = 0xc2
+                    0x00c4                  IPC16 = 0xc4
+                    0x00c4                  _IPC16 = 0xc4
+                    0x00c4                  _IPC16bits = 0xc4
+                    0x00c6                  IPC17 = 0xc6
+                    0x00c6                  _IPC17 = 0xc6
+                    0x00c6                  _IPC17bits = 0xc6
+                    0x00e0                  INTTREG = 0xe0
+                    0x00e0                  _INTTREG = 0xe0
+                    0x00e0                  _INTTREGbits = 0xe0
+                    0x0100                  TMR1 = 0x100
+                    0x0100                  _TMR1 = 0x100
+                    0x0102                  PR1 = 0x102
+                    0x0102                  _PR1 = 0x102
+                    0x0104                  T1CON = 0x104
+                    0x0104                  _T1CON = 0x104
+                    0x0104                  _T1CONbits = 0x104
+                    0x0106                  TMR2 = 0x106
+                    0x0106                  _TMR2 = 0x106
+                    0x0108                  TMR3HLD = 0x108
+                    0x0108                  _TMR3HLD = 0x108
+                    0x010a                  TMR3 = 0x10a
+                    0x010a                  _TMR3 = 0x10a
+                    0x010c                  PR2 = 0x10c
+                    0x010c                  _PR2 = 0x10c
+                    0x010e                  PR3 = 0x10e
+                    0x010e                  _PR3 = 0x10e
+                    0x0110                  T2CON = 0x110
+                    0x0110                  _T2CON = 0x110
+                    0x0110                  _T2CONbits = 0x110
+                    0x0112                  T3CON = 0x112
+                    0x0112                  _T3CON = 0x112
+                    0x0112                  _T3CONbits = 0x112
+                    0x0114                  TMR4 = 0x114
+                    0x0114                  _TMR4 = 0x114
+                    0x0116                  TMR5HLD = 0x116
+                    0x0116                  _TMR5HLD = 0x116
+                    0x0118                  TMR5 = 0x118
+                    0x0118                  _TMR5 = 0x118
+                    0x011a                  PR4 = 0x11a
+                    0x011a                  _PR4 = 0x11a
+                    0x011c                  PR5 = 0x11c
+                    0x011c                  _PR5 = 0x11c
+                    0x011e                  T4CON = 0x11e
+                    0x011e                  _T4CON = 0x11e
+                    0x011e                  _T4CONbits = 0x11e
+                    0x0120                  T5CON = 0x120
+                    0x0120                  _T5CON = 0x120
+                    0x0120                  _T5CONbits = 0x120
+                    0x0122                  TMR6 = 0x122
+                    0x0122                  _TMR6 = 0x122
+                    0x0124                  TMR7HLD = 0x124
+                    0x0124                  _TMR7HLD = 0x124
+                    0x0126                  TMR7 = 0x126
+                    0x0126                  _TMR7 = 0x126
+                    0x0128                  PR6 = 0x128
+                    0x0128                  _PR6 = 0x128
+                    0x012a                  PR7 = 0x12a
+                    0x012a                  _PR7 = 0x12a
+                    0x012c                  T6CON = 0x12c
+                    0x012c                  _T6CON = 0x12c
+                    0x012c                  _T6CONbits = 0x12c
+                    0x012e                  T7CON = 0x12e
+                    0x012e                  _T7CON = 0x12e
+                    0x012e                  _T7CONbits = 0x12e
+                    0x0130                  TMR8 = 0x130
+                    0x0130                  _TMR8 = 0x130
+                    0x0132                  TMR9HLD = 0x132
+                    0x0132                  _TMR9HLD = 0x132
+                    0x0134                  TMR9 = 0x134
+                    0x0134                  _TMR9 = 0x134
+                    0x0136                  PR8 = 0x136
+                    0x0136                  _PR8 = 0x136
+                    0x0138                  PR9 = 0x138
+                    0x0138                  _PR9 = 0x138
+                    0x013a                  T8CON = 0x13a
+                    0x013a                  _T8CON = 0x13a
+                    0x013a                  _T8CONbits = 0x13a
+                    0x013c                  T9CON = 0x13c
+                    0x013c                  _T9CON = 0x13c
+                    0x013c                  _T9CONbits = 0x13c
+                    0x0140                  IC1BUF = 0x140
+                    0x0140                  _IC1BUF = 0x140
+                    0x0142                  IC1CON = 0x142
+                    0x0142                  _IC1CON = 0x142
+                    0x0142                  _IC1CONbits = 0x142
+                    0x0144                  IC2BUF = 0x144
+                    0x0144                  _IC2BUF = 0x144
+                    0x0146                  IC2CON = 0x146
+                    0x0146                  _IC2CON = 0x146
+                    0x0146                  _IC2CONbits = 0x146
+                    0x0148                  IC3BUF = 0x148
+                    0x0148                  _IC3BUF = 0x148
+                    0x014a                  IC3CON = 0x14a
+                    0x014a                  _IC3CON = 0x14a
+                    0x014a                  _IC3CONbits = 0x14a
+                    0x014c                  IC4BUF = 0x14c
+                    0x014c                  _IC4BUF = 0x14c
+                    0x014e                  IC4CON = 0x14e
+                    0x014e                  _IC4CON = 0x14e
+                    0x014e                  _IC4CONbits = 0x14e
+                    0x0150                  IC5BUF = 0x150
+                    0x0150                  _IC5BUF = 0x150
+                    0x0152                  IC5CON = 0x152
+                    0x0152                  _IC5CON = 0x152
+                    0x0152                  _IC5CONbits = 0x152
+                    0x0154                  IC6BUF = 0x154
+                    0x0154                  _IC6BUF = 0x154
+                    0x0156                  IC6CON = 0x156
+                    0x0156                  _IC6CON = 0x156
+                    0x0156                  _IC6CONbits = 0x156
+                    0x0158                  IC7BUF = 0x158
+                    0x0158                  _IC7BUF = 0x158
+                    0x015a                  IC7CON = 0x15a
+                    0x015a                  _IC7CON = 0x15a
+                    0x015a                  _IC7CONbits = 0x15a
+                    0x015c                  IC8BUF = 0x15c
+                    0x015c                  _IC8BUF = 0x15c
+                    0x015e                  IC8CON = 0x15e
+                    0x015e                  _IC8CON = 0x15e
+                    0x015e                  _IC8CONbits = 0x15e
+                    0x0180                  OC1RS = 0x180
+                    0x0180                  _OC1RS = 0x180
+                    0x0182                  OC1R = 0x182
+                    0x0182                  _OC1R = 0x182
+                    0x0184                  OC1CON = 0x184
+                    0x0184                  _OC1CON = 0x184
+                    0x0184                  _OC1CONbits = 0x184
+                    0x0186                  OC2RS = 0x186
+                    0x0186                  _OC2RS = 0x186
+                    0x0188                  OC2R = 0x188
+                    0x0188                  _OC2R = 0x188
+                    0x018a                  OC2CON = 0x18a
+                    0x018a                  _OC2CON = 0x18a
+                    0x018a                  _OC2CONbits = 0x18a
+                    0x018c                  OC3RS = 0x18c
+                    0x018c                  _OC3RS = 0x18c
+                    0x018e                  OC3R = 0x18e
+                    0x018e                  _OC3R = 0x18e
+                    0x0190                  OC3CON = 0x190
+                    0x0190                  _OC3CON = 0x190
+                    0x0190                  _OC3CONbits = 0x190
+                    0x0192                  OC4RS = 0x192
+                    0x0192                  _OC4RS = 0x192
+                    0x0194                  OC4R = 0x194
+                    0x0194                  _OC4R = 0x194
+                    0x0196                  OC4CON = 0x196
+                    0x0196                  _OC4CON = 0x196
+                    0x0196                  _OC4CONbits = 0x196
+                    0x0198                  OC5RS = 0x198
+                    0x0198                  _OC5RS = 0x198
+                    0x019a                  OC5R = 0x19a
+                    0x019a                  _OC5R = 0x19a
+                    0x019c                  OC5CON = 0x19c
+                    0x019c                  _OC5CON = 0x19c
+                    0x019c                  _OC5CONbits = 0x19c
+                    0x019e                  OC6RS = 0x19e
+                    0x019e                  _OC6RS = 0x19e
+                    0x01a0                  OC6R = 0x1a0
+                    0x01a0                  _OC6R = 0x1a0
+                    0x01a2                  OC6CON = 0x1a2
+                    0x01a2                  _OC6CON = 0x1a2
+                    0x01a2                  _OC6CONbits = 0x1a2
+                    0x01a4                  OC7RS = 0x1a4
+                    0x01a4                  _OC7RS = 0x1a4
+                    0x01a6                  OC7R = 0x1a6
+                    0x01a6                  _OC7R = 0x1a6
+                    0x01a8                  OC7CON = 0x1a8
+                    0x01a8                  _OC7CON = 0x1a8
+                    0x01a8                  _OC7CONbits = 0x1a8
+                    0x01aa                  OC8RS = 0x1aa
+                    0x01aa                  _OC8RS = 0x1aa
+                    0x01ac                  OC8R = 0x1ac
+                    0x01ac                  _OC8R = 0x1ac
+                    0x01ae                  OC8CON = 0x1ae
+                    0x01ae                  _OC8CON = 0x1ae
+                    0x01ae                  _OC8CONbits = 0x1ae
+                    0x0200                  I2C1RCV = 0x200
+                    0x0200                  _I2C1RCV = 0x200
+                    0x0200                  I2CRCV = 0x200
+                    0x0200                  _I2CRCV = 0x200
+                    0x0202                  I2C1TRN = 0x202
+                    0x0202                  _I2C1TRN = 0x202
+                    0x0202                  I2CTRN = 0x202
+                    0x0202                  _I2CTRN = 0x202
+                    0x0204                  I2C1BRG = 0x204
+                    0x0204                  _I2C1BRG = 0x204
+                    0x0206                  I2C1CON = 0x206
+                    0x0206                  _I2C1CON = 0x206
+                    0x0206                  _I2C1CONbits = 0x206
+                    0x0206                  I2CCON = 0x206
+                    0x0206                  _I2CCON = 0x206
+                    0x0206                  _I2CCONbits = 0x206
+                    0x0208                  I2C1STAT = 0x208
+                    0x0208                  _I2C1STAT = 0x208
+                    0x0208                  _I2C1STATbits = 0x208
+                    0x0208                  I2CSTAT = 0x208
+                    0x0208                  _I2CSTAT = 0x208
+                    0x0208                  _I2CSTATbits = 0x208
+                    0x020a                  I2C1ADD = 0x20a
+                    0x020a                  _I2C1ADD = 0x20a
+                    0x020a                  I2CADD = 0x20a
+                    0x020a                  _I2CADD = 0x20a
+                    0x020c                  I2C1MSK = 0x20c
+                    0x020c                  _I2C1MSK = 0x20c
+                    0x0210                  I2C2RCV = 0x210
+                    0x0210                  _I2C2RCV = 0x210
+                    0x0212                  I2C2TRN = 0x212
+                    0x0212                  _I2C2TRN = 0x212
+                    0x0214                  I2C2BRG = 0x214
+                    0x0214                  _I2C2BRG = 0x214
+                    0x0216                  I2C2CON = 0x216
+                    0x0216                  _I2C2CON = 0x216
+                    0x0216                  _I2C2CONbits = 0x216
+                    0x0218                  I2C2STAT = 0x218
+                    0x0218                  _I2C2STAT = 0x218
+                    0x0218                  _I2C2STATbits = 0x218
+                    0x021a                  I2C2ADD = 0x21a
+                    0x021a                  _I2C2ADD = 0x21a
+                    0x021c                  I2C2MSK = 0x21c
+                    0x021c                  _I2C2MSK = 0x21c
+                    0x0220                  U1MODE = 0x220
+                    0x0220                  _U1MODE = 0x220
+                    0x0220                  _U1MODEbits = 0x220
+                    0x0222                  U1STA = 0x222
+                    0x0222                  _U1STA = 0x222
+                    0x0222                  _U1STAbits = 0x222
+                    0x0224                  U1TXREG = 0x224
+                    0x0224                  _U1TXREG = 0x224
+                    0x0224                  _U1TXREGbits = 0x224
+                    0x0226                  U1RXREG = 0x226
+                    0x0226                  _U1RXREG = 0x226
+                    0x0226                  _U1RXREGbits = 0x226
+                    0x0228                  U1BRG = 0x228
+                    0x0228                  _U1BRG = 0x228
+                    0x0230                  U2MODE = 0x230
+                    0x0230                  _U2MODE = 0x230
+                    0x0230                  _U2MODEbits = 0x230
+                    0x0232                  U2STA = 0x232
+                    0x0232                  _U2STA = 0x232
+                    0x0232                  _U2STAbits = 0x232
+                    0x0234                  U2TXREG = 0x234
+                    0x0234                  _U2TXREG = 0x234
+                    0x0234                  _U2TXREGbits = 0x234
+                    0x0236                  U2RXREG = 0x236
+                    0x0236                  _U2RXREG = 0x236
+                    0x0236                  _U2RXREGbits = 0x236
+                    0x0238                  U2BRG = 0x238
+                    0x0238                  _U2BRG = 0x238
+                    0x0240                  SPI1STAT = 0x240
+                    0x0240                  _SPI1STAT = 0x240
+                    0x0240                  _SPI1STATbits = 0x240
+                    0x0242                  SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1 = 0x242
+                    0x0242                  _SPI1CON1bits = 0x242
+                    0x0244                  SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2 = 0x244
+                    0x0244                  _SPI1CON2bits = 0x244
+                    0x0248                  SPI1BUF = 0x248
+                    0x0248                  _SPI1BUF = 0x248
+                    0x0260                  SPI2STAT = 0x260
+                    0x0260                  _SPI2STAT = 0x260
+                    0x0260                  _SPI2STATbits = 0x260
+                    0x0262                  SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1 = 0x262
+                    0x0262                  _SPI2CON1bits = 0x262
+                    0x0264                  SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2 = 0x264
+                    0x0264                  _SPI2CON2bits = 0x264
+                    0x0268                  SPI2BUF = 0x268
+                    0x0268                  _SPI2BUF = 0x268
+                    0x02c6                  TRISB = 0x2c6
+                    0x02c6                  _TRISB = 0x2c6
+                    0x02c6                  _TRISBbits = 0x2c6
+                    0x02c8                  PORTB = 0x2c8
+                    0x02c8                  _PORTB = 0x2c8
+                    0x02c8                  _PORTBbits = 0x2c8
+                    0x02ca                  LATB = 0x2ca
+                    0x02ca                  _LATB = 0x2ca
+                    0x02ca                  _LATBbits = 0x2ca
+                    0x02cc                  TRISC = 0x2cc
+                    0x02cc                  _TRISC = 0x2cc
+                    0x02cc                  _TRISCbits = 0x2cc
+                    0x02ce                  PORTC = 0x2ce
+                    0x02ce                  _PORTC = 0x2ce
+                    0x02ce                  _PORTCbits = 0x2ce
+                    0x02d0                  LATC = 0x2d0
+                    0x02d0                  _LATC = 0x2d0
+                    0x02d0                  _LATCbits = 0x2d0
+                    0x02d2                  TRISD = 0x2d2
+                    0x02d2                  _TRISD = 0x2d2
+                    0x02d2                  _TRISDbits = 0x2d2
+                    0x02d4                  PORTD = 0x2d4
+                    0x02d4                  _PORTD = 0x2d4
+                    0x02d4                  _PORTDbits = 0x2d4
+                    0x02d6                  LATD = 0x2d6
+                    0x02d6                  _LATD = 0x2d6
+                    0x02d6                  _LATDbits = 0x2d6
+                    0x02de                  TRISF = 0x2de
+                    0x02de                  _TRISF = 0x2de
+                    0x02de                  _TRISFbits = 0x2de
+                    0x02e0                  PORTF = 0x2e0
+                    0x02e0                  _PORTF = 0x2e0
+                    0x02e0                  _PORTFbits = 0x2e0
+                    0x02e2                  LATF = 0x2e2
+                    0x02e2                  _LATF = 0x2e2
+                    0x02e2                  _LATFbits = 0x2e2
+                    0x02e4                  TRISG = 0x2e4
+                    0x02e4                  _TRISG = 0x2e4
+                    0x02e4                  _TRISGbits = 0x2e4
+                    0x02e6                  PORTG = 0x2e6
+                    0x02e6                  _PORTG = 0x2e6
+                    0x02e6                  _PORTGbits = 0x2e6
+                    0x02e8                  LATG = 0x2e8
+                    0x02e8                  _LATG = 0x2e8
+                    0x02e8                  _LATGbits = 0x2e8
+                    0x0300                  ADC1BUF0 = 0x300
+                    0x0300                  _ADC1BUF0 = 0x300
+                    0x0300                  ADCBUF0 = 0x300
+                    0x0300                  _ADCBUF0 = 0x300
+                    0x0320                  AD1CON1 = 0x320
+                    0x0320                  _AD1CON1 = 0x320
+                    0x0320                  _AD1CON1bits = 0x320
+                    0x0322                  AD1CON2 = 0x322
+                    0x0322                  _AD1CON2 = 0x322
+                    0x0322                  _AD1CON2bits = 0x322
+                    0x0324                  AD1CON3 = 0x324
+                    0x0324                  _AD1CON3 = 0x324
+                    0x0324                  _AD1CON3bits = 0x324
+                    0x0326                  AD1CHS123 = 0x326
+                    0x0326                  _AD1CHS123 = 0x326
+                    0x0326                  _AD1CHS123bits = 0x326
+                    0x0328                  AD1CHS0 = 0x328
+                    0x0328                  _AD1CHS0 = 0x328
+                    0x0328                  _AD1CHS0bits = 0x328
+                    0x032a                  AD1PCFGH = 0x32a
+                    0x032a                  _AD1PCFGH = 0x32a
+                    0x032a                  _AD1PCFGHbits = 0x32a
+                    0x032c                  AD1PCFGL = 0x32c
+                    0x032c                  _AD1PCFGL = 0x32c
+                    0x032c                  _AD1PCFGLbits = 0x32c
+                    0x032c                  ADPCFG = 0x32c
+                    0x032c                  _ADPCFG = 0x32c
+                    0x032c                  _ADPCFGbits = 0x32c
+                    0x032e                  AD1CSSH = 0x32e
+                    0x032e                  _AD1CSSH = 0x32e
+                    0x032e                  _AD1CSSHbits = 0x32e
+                    0x0330                  AD1CSSL = 0x330
+                    0x0330                  _AD1CSSL = 0x330
+                    0x0330                  _AD1CSSLbits = 0x330
+                    0x0332                  AD1CON4 = 0x332
+                    0x0332                  _AD1CON4 = 0x332
+                    0x0332                  _AD1CON4bits = 0x332
+                    0x0380                  DMA0CON = 0x380
+                    0x0380                  _DMA0CON = 0x380
+                    0x0380                  _DMA0CONbits = 0x380
+                    0x0382                  DMA0REQ = 0x382
+                    0x0382                  _DMA0REQ = 0x382
+                    0x0382                  _DMA0REQbits = 0x382
+                    0x0384                  DMA0STA = 0x384
+                    0x0384                  _DMA0STA = 0x384
+                    0x0386                  DMA0STB = 0x386
+                    0x0386                  _DMA0STB = 0x386
+                    0x0388                  DMA0PAD = 0x388
+                    0x0388                  _DMA0PAD = 0x388
+                    0x038a                  DMA0CNT = 0x38a
+                    0x038a                  _DMA0CNT = 0x38a
+                    0x038c                  DMA1CON = 0x38c
+                    0x038c                  _DMA1CON = 0x38c
+                    0x038c                  _DMA1CONbits = 0x38c
+                    0x038e                  DMA1REQ = 0x38e
+                    0x038e                  _DMA1REQ = 0x38e
+                    0x038e                  _DMA1REQbits = 0x38e
+                    0x0390                  DMA1STA = 0x390
+                    0x0390                  _DMA1STA = 0x390
+                    0x0392                  DMA1STB = 0x392
+                    0x0392                  _DMA1STB = 0x392
+                    0x0394                  DMA1PAD = 0x394
+                    0x0394                  _DMA1PAD = 0x394
+                    0x0396                  DMA1CNT = 0x396
+                    0x0396                  _DMA1CNT = 0x396
+                    0x0398                  DMA2CON = 0x398
+                    0x0398                  _DMA2CON = 0x398
+                    0x0398                  _DMA2CONbits = 0x398
+                    0x039a                  DMA2REQ = 0x39a
+                    0x039a                  _DMA2REQ = 0x39a
+                    0x039a                  _DMA2REQbits = 0x39a
+                    0x039c                  DMA2STA = 0x39c
+                    0x039c                  _DMA2STA = 0x39c
+                    0x039e                  DMA2STB = 0x39e
+                    0x039e                  _DMA2STB = 0x39e
+                    0x03a0                  DMA2PAD = 0x3a0
+                    0x03a0                  _DMA2PAD = 0x3a0
+                    0x03a2                  DMA2CNT = 0x3a2
+                    0x03a2                  _DMA2CNT = 0x3a2
+                    0x03a4                  DMA3CON = 0x3a4
+                    0x03a4                  _DMA3CON = 0x3a4
+                    0x03a4                  _DMA3CONbits = 0x3a4
+                    0x03a6                  DMA3REQ = 0x3a6
+                    0x03a6                  _DMA3REQ = 0x3a6
+                    0x03a6                  _DMA3REQbits = 0x3a6
+                    0x03a8                  DMA3STA = 0x3a8
+                    0x03a8                  _DMA3STA = 0x3a8
+                    0x03aa                  DMA3STB = 0x3aa
+                    0x03aa                  _DMA3STB = 0x3aa
+                    0x03ac                  DMA3PAD = 0x3ac
+                    0x03ac                  _DMA3PAD = 0x3ac
+                    0x03ae                  DMA3CNT = 0x3ae
+                    0x03ae                  _DMA3CNT = 0x3ae
+                    0x03b0                  DMA4CON = 0x3b0
+                    0x03b0                  _DMA4CON = 0x3b0
+                    0x03b0                  _DMA4CONbits = 0x3b0
+                    0x03b2                  DMA4REQ = 0x3b2
+                    0x03b2                  _DMA4REQ = 0x3b2
+                    0x03b2                  _DMA4REQbits = 0x3b2
+                    0x03b4                  DMA4STA = 0x3b4
+                    0x03b4                  _DMA4STA = 0x3b4
+                    0x03b6                  DMA4STB = 0x3b6
+                    0x03b6                  _DMA4STB = 0x3b6
+                    0x03b8                  DMA4PAD = 0x3b8
+                    0x03b8                  _DMA4PAD = 0x3b8
+                    0x03ba                  DMA4CNT = 0x3ba
+                    0x03ba                  _DMA4CNT = 0x3ba
+                    0x03bc                  DMA5CON = 0x3bc
+                    0x03bc                  _DMA5CON = 0x3bc
+                    0x03bc                  _DMA5CONbits = 0x3bc
+                    0x03be                  DMA5REQ = 0x3be
+                    0x03be                  _DMA5REQ = 0x3be
+                    0x03be                  _DMA5REQbits = 0x3be
+                    0x03c0                  DMA5STA = 0x3c0
+                    0x03c0                  _DMA5STA = 0x3c0
+                    0x03c2                  DMA5STB = 0x3c2
+                    0x03c2                  _DMA5STB = 0x3c2
+                    0x03c4                  DMA5PAD = 0x3c4
+                    0x03c4                  _DMA5PAD = 0x3c4
+                    0x03c6                  DMA5CNT = 0x3c6
+                    0x03c6                  _DMA5CNT = 0x3c6
+                    0x03c8                  DMA6CON = 0x3c8
+                    0x03c8                  _DMA6CON = 0x3c8
+                    0x03c8                  _DMA6CONbits = 0x3c8
+                    0x03ca                  DMA6REQ = 0x3ca
+                    0x03ca                  _DMA6REQ = 0x3ca
+                    0x03ca                  _DMA6REQbits = 0x3ca
+                    0x03cc                  DMA6STA = 0x3cc
+                    0x03cc                  _DMA6STA = 0x3cc
+                    0x03ce                  DMA6STB = 0x3ce
+                    0x03ce                  _DMA6STB = 0x3ce
+                    0x03d0                  DMA6PAD = 0x3d0
+                    0x03d0                  _DMA6PAD = 0x3d0
+                    0x03d2                  DMA6CNT = 0x3d2
+                    0x03d2                  _DMA6CNT = 0x3d2
+                    0x03d4                  DMA7CON = 0x3d4
+                    0x03d4                  _DMA7CON = 0x3d4
+                    0x03d4                  _DMA7CONbits = 0x3d4
+                    0x03d6                  DMA7REQ = 0x3d6
+                    0x03d6                  _DMA7REQ = 0x3d6
+                    0x03d6                  _DMA7REQbits = 0x3d6
+                    0x03d8                  DMA7STA = 0x3d8
+                    0x03d8                  _DMA7STA = 0x3d8
+                    0x03da                  DMA7STB = 0x3da
+                    0x03da                  _DMA7STB = 0x3da
+                    0x03dc                  DMA7PAD = 0x3dc
+                    0x03dc                  _DMA7PAD = 0x3dc
+                    0x03de                  DMA7CNT = 0x3de
+                    0x03de                  _DMA7CNT = 0x3de
+                    0x03e0                  DMACS0 = 0x3e0
+                    0x03e0                  _DMACS0 = 0x3e0
+                    0x03e0                  _DMACS0bits = 0x3e0
+                    0x03e2                  DMACS1 = 0x3e2
+                    0x03e2                  _DMACS1 = 0x3e2
+                    0x03e2                  _DMACS1bits = 0x3e2
+                    0x03e4                  DSADR = 0x3e4
+                    0x03e4                  _DSADR = 0x3e4
+                    0x06d2                  ODCD = 0x6d2
+                    0x06d2                  _ODCD = 0x6d2
+                    0x06d2                  _ODCDbits = 0x6d2
+                    0x06de                  ODCF = 0x6de
+                    0x06de                  _ODCF = 0x6de
+                    0x06de                  _ODCFbits = 0x6de
+                    0x06e4                  ODCG = 0x6e4
+                    0x06e4                  _ODCG = 0x6e4
+                    0x06e4                  _ODCGbits = 0x6e4
+                    0x0740                  RCON = 0x740
+                    0x0740                  _RCON = 0x740
+                    0x0740                  _RCONbits = 0x740
+                    0x0742                  OSCCON = 0x742
+                    0x0742                  _OSCCON = 0x742
+                    0x0742                  _OSCCONbits = 0x742
+                    0x0742                  OSCCONL = 0x742
+                    0x0742                  _OSCCONL = 0x742
+                    0x0743                  OSCCONH = 0x743
+                    0x0743                  _OSCCONH = 0x743
+                    0x0744                  CLKDIV = 0x744
+                    0x0744                  _CLKDIV = 0x744
+                    0x0744                  _CLKDIVbits = 0x744
+                    0x0746                  PLLFBD = 0x746
+                    0x0746                  _PLLFBD = 0x746
+                    0x0746                  _PLLFBDbits = 0x746
+                    0x0748                  OSCTUN = 0x748
+                    0x0748                  _OSCTUN = 0x748
+                    0x0748                  _OSCTUNbits = 0x748
+                    0x0750                  BSRAM = 0x750
+                    0x0750                  _BSRAM = 0x750
+                    0x0750                  _BSRAMbits = 0x750
+                    0x0752                  SSRAM = 0x752
+                    0x0752                  _SSRAM = 0x752
+                    0x0752                  _SSRAMbits = 0x752
+                    0x0760                  NVMCON = 0x760
+                    0x0760                  _NVMCON = 0x760
+                    0x0760                  _NVMCONbits = 0x760
+                    0x0766                  NVMKEY = 0x766
+                    0x0766                  _NVMKEY = 0x766
+                    0x0770                  PMD1 = 0x770
+                    0x0770                  _PMD1 = 0x770
+                    0x0770                  _PMD1bits = 0x770
+                    0x0772                  PMD2 = 0x772
+                    0x0772                  _PMD2 = 0x772
+                    0x0772                  _PMD2bits = 0x772
+                    0x0774                  PMD3 = 0x774
+                    0x0774                  _PMD3 = 0x774
+                    0x0774                  _PMD3bits = 0x774
+                    0x0140                  IC1 = 0x140
+                    0x0140                  _IC1 = 0x140
+                    0x0144                  IC2 = 0x144
+                    0x0144                  _IC2 = 0x144
+                    0x0148                  IC3 = 0x148
+                    0x0148                  _IC3 = 0x148
+                    0x014c                  IC4 = 0x14c
+                    0x014c                  _IC4 = 0x14c
+                    0x0150                  IC5 = 0x150
+                    0x0150                  _IC5 = 0x150
+                    0x0154                  IC6 = 0x154
+                    0x0154                  _IC6 = 0x154
+                    0x0158                  IC7 = 0x158
+                    0x0158                  _IC7 = 0x158
+                    0x015c                  IC8 = 0x15c
+                    0x015c                  _IC8 = 0x15c
+                    0x0180                  OC1 = 0x180
+                    0x0180                  _OC1 = 0x180
+                    0x0186                  OC2 = 0x186
+                    0x0186                  _OC2 = 0x186
+                    0x018c                  OC3 = 0x18c
+                    0x018c                  _OC3 = 0x18c
+                    0x0192                  OC4 = 0x192
+                    0x0192                  _OC4 = 0x192
+                    0x0198                  OC5 = 0x198
+                    0x0198                  _OC5 = 0x198
+                    0x019e                  OC6 = 0x19e
+                    0x019e                  _OC6 = 0x19e
+                    0x01a4                  OC7 = 0x1a4
+                    0x01a4                  _OC7 = 0x1a4
+                    0x01aa                  OC8 = 0x1aa
+                    0x01aa                  _OC8 = 0x1aa
+                    0x0240                  SPI1 = 0x240
+                    0x0240                  _SPI1 = 0x240
+                    0x0260                  SPI2 = 0x260
+                    0x0260                  _SPI2 = 0x260
+                    0x0220                  UART1 = 0x220
+                    0x0220                  _UART1 = 0x220
+                    0x0230                  UART2 = 0x230
+                    0x0230                  _UART2 = 0x230
+START GROUP
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a
+LOAD c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a
+END GROUP
+OUTPUT(dist/default/production/smu_front_p24.X.production.elf elf32-pic30)
+LOAD jump_table
+LOAD default_isr
+LOAD data_init
+
+.debug_pubtypes
+                  0x000048        0x2a6
+ .debug_pubtypes
+                  0x000048         0xd5 build/default/production/main.o
+ .debug_pubtypes
+                  0x00011d         0x76 build/default/production/func.o
+ .debug_pubtypes
+                  0x000193        0x15b build/default/production/hw.o
+
+__c30_signature
+                  0x0002ee        0x14a
+ __c30_signature
+                  0x0002ee          0x6 build/default/production/main.o
+ __c30_signature
+                  0x0002f4          0x6 build/default/production/func.o
+ __c30_signature
+                  0x0002fa          0x6 build/default/production/hw.o
+ __c30_signature
+                  0x000300          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+ __c30_signature
+                  0x000306          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+ __c30_signature
+                  0x00030c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+ __c30_signature
+                  0x000312          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divsi3.eo)
+ __c30_signature
+                  0x000318          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(udivsi3.eo)
+ __c30_signature
+                  0x00031e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(divmoddi3.eo)
+ __c30_signature
+                  0x000324          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(muldi3.eo)
+ __c30_signature
+                  0x00032a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umuldi3.eo)
+ __c30_signature
+                  0x000330          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memcpy.XX_eo)
+ __c30_signature
+                  0x000336          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncmp.XX_eo)
+ __c30_signature
+                  0x00033c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strncpy.XX_eo)
+ __c30_signature
+                  0x000342          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strtol.XX_eo)
+ __c30_signature
+                  0x000348          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo)
+ __c30_signature
+                  0x00034e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(isspace.XX_elso)
+ __c30_signature
+                  0x000354          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(tolower.XX_elso)
+ __c30_signature
+                  0x00035a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+ __c30_signature
+                  0x000360          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sscanf_cdnopuxX.XXeo)
+ __c30_signature
+                  0x000366          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+ __c30_signature
+                  0x00036c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdnopuxX.XXeo)
+ __c30_signature
+                  0x000372          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(sprintf_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x000378          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x00037e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputfld_cdnopsuxX.XXeo)
+ __c30_signature
+                  0x000384          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(memchr.XX_eo)
+ __c30_signature
+                  0x00038a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strchr.XX_eo)
+ __c30_signature
+                  0x000390          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(strlen.XX_eo)
+ __c30_signature
+                  0x000396          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+ __c30_signature
+                  0x00039c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xputtxt.XX_eo)
+ __c30_signature
+                  0x0003a2          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xvacopy.XX_eo)
+ __c30_signature
+                  0x0003a8          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(efwrite.XX_eo)
+ __c30_signature
+                  0x0003ae          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fflush.XX_elo)
+ __c30_signature
+                  0x0003b4          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_elo)
+ __c30_signature
+                  0x0003ba          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetfld_cdnopuxX.XXeo)
+ __c30_signature
+                  0x0003c0          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfwprep.XX_eo)
+ __c30_signature
+                  0x0003c6          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+ __c30_signature
+                  0x0003cc          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetstr.XX_eo)
+ __c30_signature
+                  0x0003d2          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoll.XX_eo)
+ __c30_signature
+                  0x0003d8          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+ __c30_signature
+                  0x0003de          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+ __c30_signature
+                  0x0003e4          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xatexit.XX_elo)
+ __c30_signature
+                  0x0003ea          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(free.XX_eo)
+ __c30_signature
+                  0x0003f0          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+ __c30_signature
+                  0x0003f6          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetmem.XX_eo)
+ __c30_signature
+                  0x0003fc          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(close.Leo)
+ __c30_signature
+                  0x000402          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(write.Leo)
+ __c30_signature
+                  0x000408          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(remove.Leo)
+ __c30_signature
+                  0x00040e          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(sbrk.Leo)
+ __c30_signature
+                  0x000414          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+ __c30_signature
+                  0x00041a          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memcpy_eds.Leo)
+ __c30_signature
+                  0x000420          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(memchr_eds.Leo)
+ __c30_signature
+                  0x000426          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+ __c30_signature
+                  0x00042c          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(umodsi3.eo)
+ __c30_signature
+                  0x000432          0x6 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libm-elf.a(mulsi3.eo)
+
+.nbss               0x0800         0x58
+ .nbss              0x0800         0x52 build/default/production/main.o
+                    0x0800                  _d_blink_cnt
+                    0x0802                  _blink_mask
+                    0x0804                  _led_state_int
+                    0x0806                  _d_blink
+                    0x0807                  _d_blink_mask_cnt
+                    0x0808                  _d_blink_mask_cnt2
+                    0x0809                  _display_compliance
+                    0x080a                  _rx1_rcvd_ptr
+                    0x080b                  _rx1_rcvd_flag
+                    0x080c                  _rx2_rcvd_ptr
+                    0x080d                  _rx2_rcvd_flag
+                    0x080e                  _enc_var
+                    0x0810                  _out_state
+                    0x0811                  _out_mode
+                    0x0812                  _range_curr
+                    0x0813                  _sup_force
+                    0x0814                  _sense_remote
+                    0x0815                  _disp_state
+                    0x0816                  _menu_ptr
+                    0x0817                  _avg_enabled
+                    0x0818                  _sup_enabled
+                    0x0819                  _sup_sample_now
+                    0x081a                  _temper_hs
+                    0x081c                  _set_volt
+                    0x0820                  _set_curr
+                    0x0824                  _clamp_volt
+                    0x0828                  _clamp_curr
+                    0x082c                  _meas_volt
+                    0x0830                  _meas_cur
+                    0x0834                  _rb_adc_val_1
+                    0x0838                  _rb_adc_val_2
+                    0x083c                  _keys
+                    0x083e                  _keys_new
+                    0x0840                  _keys_old
+                    0x0842                  _led_state
+                    0x0844                  _menu_items_val
+ .nbss              0x0852          0x6 build/default/production/func.o
+                    0x0852                  _msg_queue_ptr
+                    0x0853                  _rb_adc_arr_ptr
+                    0x0854                  _mb_msg_in_wait
+                    0x0855                  _mb_msg_out_rdy
+
+.ndata              0x0858          0x4
+ .ndata             0x0858          0x4 build/default/production/main.o
+                    0x0858                  _range_volt
+                    0x0859                  _edit_ptr
+                    0x085a                  _sup_meas
+                    0x085b                  _rb_adc_arr_len
+
+.bss                0x085c        0x29c
+ .bss               0x085c        0x15a build/default/production/main.o
+                    0x085c                  _disp_msg
+                    0x087a                  _d_pixelmap
+                    0x089e                  _keymap
+                    0x08a1                  _rx1_rcvd_str
+                    0x08bf                  _rx2_rcvd_str
+                    0x08de                  _cal_const
+ .bss               0x09b6        0x142 build/default/production/func.o
+                    0x09b6                  _msg_in_queue
+                    0x0a33                  _mb_msg_in_buf
+                    0x0a51                  _mb_msg_out_buf
+                    0x0a70                  _rb_adc_arr_1
+                    0x0ab4                  _rb_adc_arr_2
+
+.data               0x0af8        0x1a4
+ .data              0x0af8         0x88 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xfiles.XX_elo)
+                    0x0af8                  __Stdin
+                    0x0b20                  __Stdout
+                    0x0b48                  __Stderr
+                    0x0b70                  __Files
+ .data              0x0b80         0x4a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoul.XX_eo)
+ .data              0x0bca         0x4a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xstoull.XX_eo)
+ .data              0x0c14         0x26 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xgetint.XX_eo)
+ .data              0x0c3a         0x22 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xlitob.XX_eo)
+ .data              0x0c5c         0x1a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopuxX.XXeo)
+ .data              0x0c76         0x1a c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xprintf_cdnopsuxX.XXeo)
+ .data              0x0c90          0xc c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(xscanf_cdnopuxX.XXeo)
+
+.bss                0x0c9c          0xa
+ .bss               0x0c9c          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(errno.XX_elo)
+                    0x0c9c                  _errno
+                    0x0c9e                  __Tls_setup_errno
+ .bss               0x0ca0          0x4 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x0ca0                  __Aldata
+ .bss               0x0ca4          0x2 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(fclose.XX_elo)
+
+.data               0x0ca6          0x4
+ .data              0x0ca6          0x2 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-c-elf.a(malloc.XX_eo)
+                    0x0ca6                  __Size_block
+ .data              0x0ca8          0x2 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(c30_uart.Leo)
+                    0x0ca8                  ___C30_UART
+
+.bss                0x0caa          0x2
+ .bss               0x0caa          0x2 c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(brk.Lelo)
+                    0x0caa                  ___curbrk
+
+.ivt._U1RXInterrupt
+                  0x00002a          0x2
+ .ivt._U1RXInterrupt
+                  0x00002a          0x2 build/default/production/main.o
+
+.ivt._U2RXInterrupt
+                  0x000050          0x2
+ .ivt._U2RXInterrupt
+                  0x000050          0x2 build/default/production/main.o
+
+.ivt._T1Interrupt
+                  0x00001a          0x2
+ .ivt._T1Interrupt
+                  0x00001a          0x2 build/default/production/main.o
+
+.ivt._T3Interrupt
+                  0x000024          0x2
+ .ivt._T3Interrupt
+                  0x000024          0x2 build/default/production/main.o
+
+.config_JTAGEN    0xf8000e          0x2
+ .config_JTAGEN
+                  0xf8000e          0x2 build/default/production/hw.o
+
+.config_FPWRT     0xf8000c          0x2
+ .config_FPWRT    0xf8000c          0x2 build/default/production/hw.o
+
+.config_FWDTEN    0xf8000a          0x2
+ .config_FWDTEN
+                  0xf8000a          0x2 build/default/production/hw.o
+
+.config_FCKSM     0xf80008          0x2
+ .config_FCKSM    0xf80008          0x2 build/default/production/hw.o
+
+.config_IESO      0xf80006          0x2
+ .config_IESO     0xf80006          0x2 build/default/production/hw.o
+
+.const              0xa506        0x9da load address 0x002506  
+ .const             0xa506        0x688 build/default/production/func.o
+                    0xa506                  _cal_val_desc
+ .const             0xab8e        0x292 build/default/production/main.o
+                    0xab8e                  _menu_items_text
+                    0xabd6                  _menu_items_limit_max
+                    0xabde                  _menu_items_limit_min
+ .const             0xae20         0xc0 build/default/production/hw.o
+                    0xae20                  _ASCII
+
+.text             0x002ee0       0x1d26
+ .text            0x002ee0        0xfcc build/default/production/main.o
+                  0x002ee0                  _serial_tasks
+                  0x003300                  _display_main_values
+                  0x0036c8                  _key_handling_def
+                  0x003920                  _front_panel_def
+                  0x003a40                  _display_menu
+                  0x003a9a                  _key_handling_menu
+                  0x003b02                  _front_panel_menu
+                  0x003b98                  _main
+ .text            0x003eac        0x6c2 build/default/production/func.o
+                  0x003eac                  _mainboard_msg_enqueue
+                  0x003f24                  _mainboard_msg_dequeue
+                  0x003f84                  _mainboard_msg_qlen
+                  0x003f8c                  _mainboard_comms
+                  0x004106                  _mainboard_rv_enqueue
+                  0x004140                  _mainboard_ri_enqueue
+                  0x004192                  _mainboard_dac_enqueue
+                  0x0041c0                  _get_dac_volt
+                  0x00420a                  _get_dac_curr
+                  0x004254                  _get_dac_cvolt
+                  0x004292                  _get_dac_ccurr
+                  0x0042d0                  _enc_set_long
+                  0x004370                  _enc_inc_int
+                  0x004390                  _get_volt_from_adc
+                  0x0043d8                  _get_curr_from_adc
+                  0x004420                  _conv_adc_temp
+                  0x004460                  _adjust_long_offset_gain
+                  0x0044b6                  _get_cal_const_num
+                  0x0044d8                  _set_cal_const_num
+                  0x0044fa                  _ee_write_cal_consts
+                  0x004534                  _ee_read_cal_consts
+ .text            0x00456e        0x698 build/default/production/hw.o
+                  0x00456e                  _uart1_tx
+                  0x004586                  _uart1_txs
+                  0x0045a0                  _uart2_tx
+                  0x0045b8                  _uart2_txs
+                  0x0045d2                  _sr_shiftout
+                  0x004620                  _d_anode
+                  0x00466c                  _segment_order
+                  0x004726                  _spi_trf
+                  0x004790                  _exp_write
+                  0x0047b2                  _exp_read
+                  0x0047d6                  _map_keys
+                  0x004884                  _map_leds
+                  0x0048f6                  _ee_spi_trf
+                  0x004960                  _ee_wren
+                  0x004976                  _ee_wrdi
+                  0x00498c                  _ee_rdsr
+                  0x0049aa                  _ee_read_byte
+                  0x0049d8                  _ee_write_byte
+                  0x004a2a                  _ee_write_page
+                  0x004a9a                  _ee_read_page
+                  0x004ae2                  _ee_read_long
+                  0x004afa                  _ee_write_long
+                  0x004b12                  _get_adc
+                  0x004b2c                  _set_fan_speed
+                  0x004b68                  _get_compliance_pin_state
+                  0x004b7e                  _hw_init
+
+.dinit            0x004c06        0x19a
+ .dinit           0x004c06        0x19a data_init
+
+.init.delay32     0x004da0         0x1c
+ .init.delay32    0x004da0         0x1c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                  0x004da0                  ___delay32
