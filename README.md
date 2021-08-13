@@ -10,7 +10,7 @@ Basically, it's glorified power supply, able to both source voltage (and measure
 - pcb
 -- pcb_gerber - gerber data in zip files, ready to be manufactured
 -- pcb_ibom - interactive BOM files, helping when populating the boards, also helpful to get familiar with the project
--- pcb_kicad - PCB source files, made in Kicad 5.10
+-- pcb_kicad - PCB source files, made in Kicad 5.10 
 -- schematics_pdf - all schematics in PDF format, for easy viewing or printing
 
 ## What is JSMU?
