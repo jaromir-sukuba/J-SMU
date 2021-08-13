@@ -31,7 +31,7 @@ JSMU is designed to work as standalone device, but can be connected to computer 
 More pictures can be found in [imgur gallery](https://imgur.com/a/rR8cIFG)
 
 ## FAQ
-Q: I noticed you used AT90S4434, made in 1998 as controller for your analog board.
+Q: I noticed you used AT90S4434, made in 1999 as controller for your analog board.
 - A: Yes, that is correct observation. Two reasons led me to this decision; first of all, I like to do weird design choices from a time to time. Let's call it design dissonances. Secondly, when this design was born (Winter2020/2021-Summer 2021) component crisis was quite strong and I was limited by what components were available. I tried to choose as much components as were available in my junkbox as possible. AT90S4434 can be replaced by AtMega8535 after minor source touchup and recompiling.
 
 Q: dsPIC33FJ128GP306 is also weird choice here
