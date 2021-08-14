@@ -4,7 +4,7 @@ Basically, it's glorified power supply, able to both source voltage (and measure
 It's very useful as general purpose PSU with precise setpoint adjustment, as a tool for measuring high resistances, for testing semiconductors in wide range of voltages or currents. You can do all this things using classic lab tools (PSU, ammeter, voltmeter, switches), SMU offers this all in single package and is designed to be interconnected with computer to automate the tasks.
 
 ## What is in this repository?
-- BOM - Bill Of Material. Contains list of components and materials used in this device. Separated by PCBs.
++ BOM - Bill Of Material. Contains list of components and materials used in this device. Separated by PCBs.
 + firmware - firmware for two microcontrollers running in JSMU
 + mechanical - mechanical parts I designed for this SMU
 + media - minimal amount of pictures
