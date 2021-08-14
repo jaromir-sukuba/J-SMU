@@ -741,4 +741,6 @@ Wire Notes Line
 	3125 5800 3125 6800
 Text Notes 3150 5900 0    50   ~ 0
 Mounting holes
+Text Notes 7350 7525 0    79   ~ 16
+JSMU - power board P1
 $EndSCHEMATC
