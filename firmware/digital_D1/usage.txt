@@ -1,2 +1,2 @@
 This is project file for MPLABX
-Tested on MPLABX 5.25 and XC16 compiler 1.50, newer versions are probably OK, too
+Tested on MPLABX 5.50 and XC16 compiler 1.70, newer versions are probably OK, too

@@ -1,1 +1,0 @@
- -c -mcpu=$(MP_PROCESSOR_OPTION)        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   C:\Users\jarom\Documents\MEGAsync\smu\fw\front_p24\smu_front_p24.X\hw.c

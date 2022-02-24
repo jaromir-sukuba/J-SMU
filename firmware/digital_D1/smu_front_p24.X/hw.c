@@ -22,7 +22,7 @@
 
 
 //slighly altered from https://github.com/dmadison/LED-Segment-ASCII
-const unsigned int ASCII[96] = {
+const uint16_t ASCII[96] = {
 	0b000000000000000, /* (space) */
 	0b100000000000110, /* ! */
 	0b000001000000010, /* " */
@@ -122,7 +122,7 @@ const unsigned int ASCII[96] = {
 };
 
 //uart functions, to transmit single byte or null terminated string
-void uart1_tx (unsigned char data)
+void uart1_tx (uint8_t data)
 	{
 	U1TXREG = data;
 	while (U1STAbits.TRMT==0);
@@ -133,7 +133,7 @@ void uart1_txs (char * data)
 	while (*data!=0) uart1_tx(*data++);
 	}
 
-void uart2_tx (unsigned char data)
+void uart2_tx (uint8_t data)
 	{
 	U2TXREG = data;
 	while (U2STAbits.TRMT==0);
@@ -145,9 +145,9 @@ void uart2_txs (char * data)
 	}
 
 //shift out data to serial register with LEDs on it
-void sr_shiftout (unsigned int data)
+void sr_shiftout (uint16_t data)
     {
-    unsigned char i;
+    uint8_t i;
     for (i=0;i<16;i++)
         {
         if (data&0x8000)
@@ -164,7 +164,7 @@ void sr_shiftout (unsigned int data)
     }
 
 //select proper display multiplex, or anode
-void d_anode (unsigned char data)
+void d_anode (uint8_t data)
 	{
 	if (data&0x01)  BS(AS0_P,AS0_B);
 		else        BC(AS0_P,AS0_B);
@@ -175,10 +175,11 @@ void d_anode (unsigned char data)
 	}
 
 
-//map messy segment order to something more palatable, to be compatible with ASCII table above
-unsigned int segment_order (unsigned int in)
+//map messy segment order (chosen for simple PCB routing) to something more 
+//palatable, to be compatible with ASCII table above
+uint16_t segment_order (uint16_t in)
 	{
-	unsigned int out=0;
+	uint16_t out=0;
 	if (in&(1<<0)) out|=(1<<0);
 	if (in&(1<<1)) out|=(1<<1);
 	if (in&(1<<2)) out|=(1<<2);
@@ -199,9 +200,9 @@ unsigned int segment_order (unsigned int in)
 
 //transmit SPI byte to SPI expander, this code has known bug - the bit order is wrong, but in this case it
 //doesn't matter much. Keys are correctly mapped to this, so I'm not going to change it unless needed
-unsigned char spi_trf (unsigned char data)
+uint8_t spi_trf (uint8_t data)
 	{
-	unsigned char i,ret=0;
+	uint8_t i,ret=0;
 	for (i=0;i<8;i++)
 		{
 		if (data&0x80)
@@ -222,7 +223,7 @@ unsigned char spi_trf (unsigned char data)
 	}
 
 //read and write SPI IO expander
-void exp_write (unsigned char addr, unsigned char data)
+void exp_write (uint8_t addr, uint8_t data)
 	{
 	BC(EX_CS_P,EX_CS_B);
 	spi_trf(0x40);
@@ -231,9 +232,9 @@ void exp_write (unsigned char addr, unsigned char data)
 	BS(EX_CS_P,EX_CS_B);
 	}
 
-unsigned char exp_read (unsigned char addr)
+uint8_t exp_read (uint8_t addr)
 	{
-	unsigned char retval;
+	uint8_t retval;
 	BC(EX_CS_P,EX_CS_B);
 	spi_trf(0x41);
 	spi_trf(addr);
@@ -243,9 +244,9 @@ unsigned char exp_read (unsigned char addr)
 	}
 
 //map keys to proper order (first key is the one on lewer left)
-unsigned int map_keys (unsigned int input)
+uint16_t map_keys (uint16_t input)
 	{
-	unsigned int retval = 0;
+	uint16_t retval = 0;
 	if (input&0x0010) retval|=0x0001;
 	if (input&0x0008) retval|=0x0002;
 	if (input&0x0002) retval|=0x0004;
@@ -264,9 +265,9 @@ unsigned int map_keys (unsigned int input)
 	}
 
 //map LEDs so that first is lower left
-unsigned int map_leds (unsigned int input)
+uint16_t map_leds (uint16_t input)
 	{
-	unsigned int retval = 0;
+	uint16_t retval = 0;
 	if (input&0x0001) retval|=0x0100;
 	if (input&0x0002) retval|=0x0400;
 	if (input&0x0004) retval|=0x0200;
@@ -280,9 +281,9 @@ unsigned int map_leds (unsigned int input)
 	}
 
 //another bitbanged SPI function, this time with proper bit order, as it matters for EEPROM
-unsigned char ee_spi_trf (unsigned char data)
+uint8_t ee_spi_trf (uint8_t data)
 	{
-	unsigned char i,ret=0;
+	uint8_t i,ret=0;
 	for (i=0;i<8;i++)
 		{
 		if (data&0x80)
@@ -317,9 +318,9 @@ void ee_wrdi (void)
 	BS(EE_CS_P,EE_CS_B);
 	}
 
-unsigned char ee_rdsr (void)
+uint8_t ee_rdsr (void)
 	{
-	unsigned char retval;
+	uint8_t retval;
 	BC(EE_CS_P,EE_CS_B);
 	ee_spi_trf(0x05);
 	retval = ee_spi_trf(0);
@@ -328,9 +329,9 @@ unsigned char ee_rdsr (void)
 	}
 
 
-unsigned char ee_read_byte (unsigned int addr)
+uint8_t ee_read_byte (uint16_t addr)
 	{
-	unsigned char retval;
+	uint8_t retval;
 	BC(EE_CS_P,EE_CS_B);
 	ee_spi_trf(0x03);
 	ee_spi_trf((addr>>8)&0xFF);
@@ -340,9 +341,9 @@ unsigned char ee_read_byte (unsigned int addr)
 	return retval;
 	}
 
-unsigned char ee_write_byte (unsigned int addr, unsigned char data)
+uint8_t ee_write_byte (uint16_t addr, uint8_t data)
 	{
-	unsigned int to_count;
+	uint16_t to_count;
 	ee_wren();
 	BC(EE_CS_P,EE_CS_B);
 	ee_spi_trf(0x02);
@@ -360,10 +361,10 @@ unsigned char ee_write_byte (unsigned int addr, unsigned char data)
 	return 1;
 	}
 
-unsigned char ee_write_page (unsigned int addr, unsigned char * data, unsigned char pagesize)
+uint8_t ee_write_page (uint16_t addr, uint8_t * data, uint8_t pagesize)
 	{
-	unsigned int to_count;
-	unsigned char i;
+	uint16_t to_count=0;
+	uint8_t i;
 	ee_wren();
 	BC(EE_CS_P,EE_CS_B);
 	ee_spi_trf(0x02);
@@ -381,9 +382,9 @@ unsigned char ee_write_page (unsigned int addr, unsigned char * data, unsigned c
 	return 1;
 	}
 
-void ee_read_page (unsigned int addr, unsigned char * data, unsigned char pagesize)
+void ee_read_page (uint16_t addr, uint8_t * data, uint8_t pagesize)
 	{
-	unsigned char i;
+	uint8_t i;
 	BC(EE_CS_P,EE_CS_B);
 	ee_spi_trf(0x03);
 	ee_spi_trf((addr>>8)&0xFF);
@@ -392,24 +393,24 @@ void ee_read_page (unsigned int addr, unsigned char * data, unsigned char pagesi
 	BS(EE_CS_P,EE_CS_B);
 	}
 
-//read from EERPROM one 4-byte page as single long number
-long ee_read_long (unsigned int laddr)
+//read from EERPROM one 4-byte page as single int32_t number
+long ee_read_long (uint16_t laddr)
 	{
 	long retval;
-	unsigned char *p = (unsigned char*)&retval;
+	uint8_t *p = (uint8_t*)&retval;
 	ee_read_page(laddr*4,p,4);
 	return retval;
 	}
 
-//write to EEPROM one 4-byte page as single long number
-unsigned char ee_write_long (unsigned int laddr, long value)
+//write to EEPROM one 4-byte page as single int32_t number
+uint8_t ee_write_long (uint16_t laddr, int32_t value)
 	{
-	unsigned char *p = (unsigned char*)&value;
+	uint8_t *p = (uint8_t*)&value;
 	return ee_write_page(laddr*4,p,4);
 	}
 
 //get MCU internal ADC result on given channel
-unsigned int get_adc (unsigned char chnl)
+uint16_t get_adc (uint8_t chnl)
 	{
 	AD1CHS0 = chnl;
 	AD1CON1bits.SAMP = 1;
@@ -418,7 +419,7 @@ unsigned int get_adc (unsigned char chnl)
 	}
 
 //set fan speed level to two (+off) possible values
-void set_fan_speed (unsigned char val)
+void set_fan_speed (uint8_t val)
 	{
 	if (val==1)	
 		{
@@ -437,7 +438,7 @@ void set_fan_speed (unsigned char val)
 	}
 
 //return state of pin indicating the main board is in compliance state
-unsigned char get_compliance_pin_state (void)
+uint8_t get_compliance_pin_state (void)
 	{
 	if (BV(ATN2_P,ATN2_B)==0) return 1;
 	else return 0;
@@ -489,3 +490,4 @@ void hw_init (void)
 	exp_write(0x01,0xF8);
 	exp_write(0x0D,0xF8);
 	}
+

@@ -22,8 +22,6 @@
 #define	DISPLAY_LEN	18
 
 
-#define		VER_STRING	"V 1-0"
-
 typedef union
 {
 struct
@@ -45,7 +43,7 @@ struct
 	unsigned k15:1;
 	unsigned kx:1;
  };
-unsigned int INT;
+uint16_t INT;
 }key_var;
 
 typedef union
@@ -63,14 +61,14 @@ struct
 	unsigned led9:1;
 	unsigned ledx:7;
  };
-unsigned int INT;
+uint16_t INT;
 }led_var;
 
 
 typedef struct cal_single 
 {
-   long offset;
-   long gain;
+   int32_t offset;
+   int32_t gain;
 } cal_single;
 
 typedef struct c_fvmi
@@ -94,24 +92,28 @@ typedef struct cal_type
 	} cal_type;
 	
 	
-unsigned char mainboard_msg_enqueue (char * msg);
-unsigned char mainboard_msg_qlen (void);
-unsigned char mainboard_msg_dequeue (char * msg);
-unsigned char mainboard_comms (unsigned char mb_state);
-unsigned char mainboard_rv_enqueue (unsigned char range);
-unsigned char mainboard_ri_enqueue (unsigned char range);
-unsigned char mainboard_dac_enqueue (unsigned char dac, unsigned int value);
-unsigned int get_dac_volt (long volt_val);
-unsigned int get_dac_curr (long curr_val);
-unsigned int get_dac_cvolt (long volt_val);
-unsigned int get_dac_ccurr (long curr_val);
-void enc_set_long (long * var_long, int enc_count, unsigned char num_ptr, long limit_low, long limit_up);
+uint8_t mainboard_msg_enqueue (char * msg);
+uint8_t mainboard_msg_qlen (void);
+uint8_t mainboard_msg_dequeue (char * msg);
+uint8_t mainboard_comms (uint8_t mb_state);
+uint8_t mainboard_rv_enqueue (uint8_t range);
+uint8_t mainboard_ri_enqueue (uint8_t range);
+uint8_t mainboard_dac_enqueue (uint8_t dac, uint16_t value);
+uint16_t get_dac_volt (int32_t volt_val);
+uint16_t get_dac_curr (int32_t curr_val);
+uint16_t get_dac_cvolt (int32_t volt_val);
+uint16_t get_dac_ccurr (int32_t curr_val);
+void enc_set_long (int32_t * var_long, int enc_count, uint8_t num_ptr, int32_t limit_low, int32_t limit_up);
 void enc_inc_int (int * var_int, int enc_count);
-long get_volt_from_adc (unsigned long adcval);
-long get_curr_from_adc (unsigned long adcval);
-int conv_adc_temp (unsigned int adcval);
-long adjust_long_offset_gain (long offset, long gain, long value);
-long get_cal_const_num (unsigned char num, cal_type * cal_con);
-void set_cal_const_num (unsigned char num, cal_type * cal_con, long value);
-unsigned char ee_write_cal_consts (unsigned char set, cal_type * cal_con);
-unsigned char ee_read_cal_consts (unsigned char set, cal_type * cal_con);
+int32_t get_volt_from_adc (uint32_t adcval);
+int32_t get_curr_from_adc (uint32_t adcval);
+int conv_adc_temp (uint16_t adcval);
+int32_t adjust_long_offset_gain (int32_t offset, int32_t gain, int32_t value);
+int32_t get_cal_const_num (uint8_t num, cal_type * cal_con);
+void set_cal_const_num (uint8_t num, cal_type * cal_con, int32_t value);
+uint8_t ee_write_cal_consts (uint8_t set, cal_type * cal_con);
+uint8_t ee_read_cal_consts (unsigned char set, cal_type * cal_con);
+float conv_setcurr_fval (int32_t scurr, uint8_t srange);
+float conv_setvolt_fval (int32_t svolt, uint8_t srange);
+void conv_fval_setcurr (float val_out, float val_range, int32_t * scurr, uint8_t * srange, uint8_t arange);
+void conv_fval_setvolt (float val_out, float val_range, int32_t * svolt, uint8_t * srange, uint8_t arange);

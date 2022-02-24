@@ -5,6 +5,14 @@
 #define	delay_us __delay_us
 #define	delay_ms __delay_ms
 
+#define SCPI_IDN1 "JS"
+#define SCPI_IDN2 "JSMU"
+#define SCPI_IDN3 NULL
+#define SCPI_IDN4 "01-02"
+#define SCPI_ERROR_QUEUE_SIZE 17
+#define SCPI_INPUT_BUFFER_LENGTH 256
+#define SMALL_BUFFER_LEN 50
+
 #define	QMSG_LEN	10
 #define	QLEN		10
 #define	MAX_AVG_LEN	17
@@ -78,29 +86,32 @@
 
 
 
-void uart1_tx (unsigned char data);
+void uart1_tx (uint8_t data);
 void uart1_txs (char * data);
-void uart2_tx (unsigned char data);
+void uart2_tx (uint8_t data);
 void uart2_txs (char * data);
-void sr_shiftout (unsigned int data);
-void d_anode (unsigned char data);
-unsigned int segment_order (unsigned int in);
-unsigned char spi_trf (unsigned char data);
-void exp_write (unsigned char addr, unsigned char data);
-unsigned char exp_read (unsigned char addr);
-unsigned int map_keys (unsigned int input);
-unsigned int map_leds (unsigned int input);
+void sr_shiftout (uint16_t data);
+void d_anode (uint8_t data);
+uint16_t segment_order (uint16_t in);
+uint8_t spi_trf (uint8_t data);
+void exp_write (uint8_t addr, uint8_t data);
+uint8_t exp_read (uint8_t addr);
+uint16_t map_keys (uint16_t input);
+uint16_t map_leds (uint16_t input);
 void hw_init (void);
-unsigned char ee_spi_trf (unsigned char data);
+uint8_t ee_spi_trf (uint8_t data);
 void ee_wren (void);
 void ee_wrdi (void);
-unsigned char ee_rdsr (void);
-unsigned char ee_read_byte (unsigned int addr);
-unsigned char ee_write_byte (unsigned int addr, unsigned char data);
-unsigned char ee_write_page (unsigned int addr, unsigned char * data, unsigned char pagesize);
-void ee_read_page (unsigned int addr, unsigned char * data, unsigned char pagesize);
-long ee_read_long (unsigned int laddr);
-unsigned char ee_write_long (unsigned int laddr, long value);
-unsigned int get_adc (unsigned char chnl);
-void set_fan_speed (unsigned char val);
-unsigned char get_compliance_pin_state (void);
+uint8_t ee_rdsr (void);
+uint8_t ee_read_byte (uint16_t addr);
+uint8_t ee_write_byte (uint16_t addr, uint8_t data);
+uint8_t ee_write_page (uint16_t addr, uint8_t * data, uint8_t pagesize);
+void ee_read_page (uint16_t addr, uint8_t * data, uint8_t pagesize);
+long ee_read_long (uint16_t laddr);
+uint8_t ee_write_long (uint16_t laddr, int32_t value);
+uint16_t get_adc (uint8_t chnl);
+void set_fan_speed (uint8_t val);
+uint8_t get_compliance_pin_state (void);
+
+
+

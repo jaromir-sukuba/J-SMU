@@ -11,11 +11,14 @@ It's very useful as general purpose PSU with precise setpoint adjustment, as a t
 + pcb
     + pcb_gerber - gerber data in zip files, ready to be manufactured
     + pcb_ibom - interactive BOM files, helping when populating the boards, also helpful to get familiar with the project
-    + pcb_kicad - PCB source files, made in Kicad 5.10
+    + pcb_kicad - PCB source files, made in Kicad 5.1.10
     + schematics_pdf - all schematics in PDF format, for easy viewing or printing
 
 ## What is JSMU?
 JSMU is open source implementation of SMU, inspired by Keithley 236 and Dave Erickson's [DIY SMU](http://www.djerickson.com/diy_smu/index.html)
+
+## How to use it?
+User and calibration guide is in the process and will be released soon(TM).
 
 ![](https://github.com/jaromir-sukuba/J-SMU/blob/master/media/IMG_9784.JPG)
 
@@ -27,7 +30,7 @@ Parameters:
 + Voltage resolution - 100uV
 + Current resolution - 1pA
 
-JSMU is designed to work as standalone device, but can be connected to computer via USB, and controlled via simple commands in ASCII text form. SCPI commands are not yet implemented, but I'm strongly considering it.
+JSMU is designed to work as standalone device, but can be connected to computer via USB, and controlled via simple commands in SCPI form, similar to Keithley 2xxx series SMUs.
 
 More pictures can be found in [imgur gallery](https://imgur.com/a/rR8cIFG)
 
